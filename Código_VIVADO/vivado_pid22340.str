@@ -1,0 +1,2826 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 22340
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Jun 28 10:16:42 BRT 2021
+Time zone: 	Brasilia Standard Time (America/Sao_Paulo)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	C:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	losilla
+User home directory: C:/Users/losilla
+User working directory: D:/GitHub/Filtro-FPGA
+User country: 	BR
+User language: 	pt
+User locale: 	pt_BR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.2
+RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/losilla/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/losilla/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/losilla/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/GitHub/Filtro-FPGA/vivado.log
+Vivado journal file location: 	D:/GitHub/Filtro-FPGA/vivado.jou
+Engine tmp dir: 	D:/GitHub/Filtro-FPGA/.Xil/Vivado-22340-DESKTOP-DMECAJG
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,104 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 74 MB (+75441kb) [00:00:14]
+// [Engine Memory]: 1,104 MB (+1005640kb) [00:00:14]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: D:\GitHub\Filtro-FPGA\filter_10g_sfp.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/GitHub/Filtro-FPGA/filter_10g_sfp.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,104 MB. GUI used memory: 54 MB. Current time: 6/28/21, 10:16:44 AM BRT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 95 MB (+18158kb) [00:00:37]
+// [GUI Memory]: 110 MB (+10720kb) [00:00:38]
+// WARNING: HEventQueue.dispatchEvent() is taking  4615 ms.
+// Tcl Message: open_project D:/GitHub/Filtro-FPGA/filter_10g_sfp.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1139.906 ; gain = 0.000 
+// Project name: filter_10g_sfp; location: D:/GitHub/Filtro-FPGA; part: xc7k420tiffg901-2L
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 121 MB (+5271kb) [00:00:45]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // D
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ah
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE, "Re-customize IP..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// N (cr):  Re-customize IP : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,155 MB. GUI used memory: 77 MB. Current time: 6/28/21, 10:17:34 AM BRT
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// [Engine Memory]: 1,258 MB (+103787kb) [00:01:12]
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2595 ms.
+// [GUI Memory]: 138 MB (+11466kb) [00:01:17]
+dismissDialog("Re-customize IP"); // N
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2126 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,332 MB. GUI used memory: 88 MB. Current time: 6/28/21, 10:18:09 AM BRT
+// WARNING: HEventQueue.dispatchEvent() is taking  1545 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1401 ms.
+// [GUI Memory]: 147 MB (+2166kb) [00:02:54]
+// [Engine Memory]: 1,332 MB (+12370kb) [00:02:54]
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1931 ms.
+// Elapsed time: 148 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 16 seconds
+selectRadioButton((HResource) null, "Automatic Control Off-Chip"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  1017 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "User-Controlled On-Chip"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  1326 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "User-Controlled Off-Chip"); // cQ
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "Automatic Control On-Chip"); // cQ
+// Elapsed time: 17 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// r (cr): Re-customize IP: addNotify
+// bz (r):  Re-customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_COMPENSATION {ZHOLD}] [get_ips clk_wiz_0] 
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bz
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 464ms to process. Increasing delay to 3000 ms.
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/sim_scripts -ip_user_files_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files -ipstatic_source_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/modelsim} {questa=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/questa} {riviera=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/riviera} {activehdl=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, false, false, false, false, true, false); // D - Popup Trigger
+dismissDialog("Managing Output Products"); // bz
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE, "Re-customize IP..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1185 ms.
+dismissDialog("Re-customize IP"); // N
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1523 ms.
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin}] [get_ips clk_wiz_1] 
+// [GUI Memory]: 157 MB (+2847kb) [00:05:22]
+// aI (cr): Generate Output Products: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton
+// HMemoryUtils.trashcanNow. Engine heap size: 1,357 MB. GUI used memory: 101 MB. Current time: 6/28/21, 10:21:54 AM BRT
+// Elapsed time: 13 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_1'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_1'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_1'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_1'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_1'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] -directory D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/sim_scripts -ip_user_files_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files -ipstatic_source_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/modelsim} {questa=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/questa} {riviera=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/riviera} {activehdl=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Managing Output Products"); // bz
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1070 ms.
+dismissDialog("Re-customize IP"); // N
+dismissDialog("Re-customize IP"); // r
+// [GUI Memory]: 167 MB (+2214kb) [00:06:00]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2); // D
+// TclEventType: DG_GRAPH_STALE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 4); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v)]", 3); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 14 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v)]", 3); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v), inst : clk_wiz_0_clk_wiz (clk_wiz_0_clk_wiz.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v), inst : clk_wiz_0_clk_wiz (clk_wiz_0_clk_wiz.v)]", 4, false, false, false, false, false, true); // D - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci), clk_wiz_1 (clk_wiz_1.v)]", 6); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci), clk_wiz_1 (clk_wiz_1.v), inst : clk_wiz_1_clk_wiz (clk_wiz_1_clk_wiz.v)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci), clk_wiz_1 (clk_wiz_1.v), inst : clk_wiz_1_clk_wiz (clk_wiz_1_clk_wiz.v)]", 7, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 2); // m
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 1); // m
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 307ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 40 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 1); // m
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, udp_ip_10g.xdc]", 26, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, udp_ip_10g.xdc]", 26, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("udp_ip_10g.xdc", 136, 217); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,379 MB. GUI used memory: 112 MB. Current time: 6/28/21, 10:24:54 AM BRT
+// Elapsed time: 49 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_2_420 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_2_420 -jobs 2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Jun 28 10:25:44 2021] Launched synth_2_420... Run output will be captured here: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 98 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g: FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g: FALSE
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aK
+selectTab((HResource) null, (HResource) null, "Log", 2); // aK
+// HMemoryUtils.trashcanNow. Engine heap size: 1,399 MB. GUI used memory: 112 MB. Current time: 6/28/21, 10:27:34 AM BRT
+// Elapsed time: 111 seconds
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aK
+selectTab((HResource) null, (HResource) null, "Log", 2); // aK
+// Elapsed time: 93 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 642, 151); // q
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 433ms to process. Increasing delay to 3000 ms.
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Launch Runs"); // f
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aK
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+selectTab((HResource) null, (HResource) null, "Log", 2); // aK
+// Elapsed time: 19 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 430, 92); // q
+// [Engine Memory]: 1,399 MB (+319kb) [00:16:36]
+// Elapsed time: 90 seconds
+selectCodeEditor("udp_ip_10g.xdc", 147, 297); // bP
+// Elapsed time: 63 seconds
+maximizeFrame(PAResourceOtoP.PAViews_COMPILATION, "Log"); // az
+// Elapsed time: 43 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 981, 189); // q
+// Elapsed time: 41 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 17, 156); // q
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 4, 157); // q
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 45, 156, false, false, false, true, false); // q - Popup Trigger
+selectMenuItem(PAResourceItoN.LogMonitor_COPY, "Copy"); // ak
+// Elapsed time: 79 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_COMPILATION, "Log"); // az
+// Elapsed time: 20 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 28); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 27); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 27); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 28); // D
+// Elapsed time: 12 seconds
+maximizeFrame(PAResourceOtoP.PAViews_COMPILATION, "Log"); // az
+// Elapsed time: 12 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Shape Builder 18-119] Failed to create I/OLOGIC Route Through shape for instance clk_wiz_1/inst/clkin1_ibufg. Found overlapping instances within the shape: clk_wiz_0/inst/clkin1_ibufg and clk_wiz_1/inst/clkin1_ibufg.. ]", 1, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "inst;-;clk_wiz_1/inst/clkin1_ibufg;-;;-;7;-;"); // ah
+selectButton("OptionPane.button", "Yes"); // JButton
+// bz (cr):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_2_420 -name synth_2_420 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7k420tiffg901-2L 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,575 MB. GUI used memory: 113 MB. Current time: 6/28/21, 10:38:24 AM BRT
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 1,836 MB. GUI used memory: 112 MB. Current time: 6/28/21, 10:38:39 AM BRT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,319 MB. GUI used memory: 112 MB. Current time: 6/28/21, 10:38:54 AM BRT
+// [Engine Memory]: 2,319 MB (+891424kb) [00:22:29]
+// Xgd.load filename: C:/Xilinx/Vivado/2020.2/data/parts/xilinx/kintex7/devint/kintex7/xc7k420t/xc7k420t.xgd; ZipEntry: xc7k420t_detail.xgd elapsed time: 0.9s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.1s
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 176 MB (+940kb) [00:22:32]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.2s
+// [GUI Memory]: 192 MB (+6797kb) [00:22:34]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  4649 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7k420tiffg901-2L 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.854 . Memory (MB): peak = 1634.879 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 992 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:70] 
+// Tcl Message: INFO: [Timing 38-2] Deriving generated clocks [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc:57] 
+// Tcl Message: Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'clk_wiz_1/inst' Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst' Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst' Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst' 
+// Tcl Message: Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst' Parsing XDC File [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:70] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:70] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:98] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:98] 
+// Tcl Message: INFO: [Project 1-1715] 2 XPM XDC files have been applied to the design. INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-1687] 8 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design. 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2399.168 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 302 instances were transformed.   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 198 instances   RAM64M => RAM64M (RAMD64E(x4)): 96 instances   RAM64X1D => RAM64X1D (RAMD64E(x2)): 4 instances   RAM64X1S => RAM64X1S (RAMS64E): 4 instances  
+// Elapsed time: 42 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+unMaximizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // az
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// Tcl Message: open_run: Time (s): cpu = 00:00:52 ; elapsed = 00:00:42 . Memory (MB): peak = 2422.531 ; gain = 1028.746 
+// ExpRunCommands.openSynthResults elapsed time: 42.7s
+// Device view-level: 0,0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// U (cr): Critical Messages: addNotify
+// HOptionPane Warning: 'Cannot find cell. (Select Object)'
+dismissDialog("Open Synthesized Design"); // bz
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 50 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // U
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, synth_2_420, General Messages, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks [get_clocks -of_objects [get_pins clk_wiz_0/inst/clk_out1_clk_wiz_0]]]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:70]. ]", 4); // ah
+// [Engine Memory]: 2,438 MB (+2262kb) [00:23:43]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,472 MB. GUI used memory: 143 MB. Current time: 6/28/21, 10:40:19 AM BRT
+// Elapsed time: 25 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, synth_2_420, General Messages, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks [get_clocks -of_objects [get_pins clk_wiz_0/inst/clk_out1_clk_wiz_0]]]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:70]. ]", 4, true, false, false, false, true, false); // ah - Popup Trigger - Node
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // ah
+selectMenu(PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, "Message Severity"); // ah
+// Elapsed time: 304 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, synth_2_420, General Messages, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks [get_clocks -of_objects [get_pins clk_wiz_0/inst/clk_out1_clk_wiz_0]]]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:70]. , [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks [get_clocks -of_objects [get_pins clk_wiz_1/inst/clk_out1_clk_wiz_1]]]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:98]. ]", 6, false); // ah
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_ip_10g.xdc", 4); // m
+selectCodeEditor("udp_ip_10g.xdc", 408, 193); // bP
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3); // D
+selectCodeEditor("udp_ip_10g.xdc", 457, 210); // bP
+// [GUI Memory]: 202 MB (+1051kb) [00:30:53]
+// Elapsed time: 65 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 25 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+// Elapsed time: 10 seconds
+selectCodeEditor("udp_transmit_test.v", 406, 214); // bP
+// Elapsed time: 23 seconds
+selectCodeEditor("udp_transmit_test.v", 262, 456); // bP
+selectCodeEditor("udp_transmit_test.v", 417, 450); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("udp_transmit_test.v", 0, 204); // bP
+// Elapsed time: 48 seconds
+selectCodeEditor("udp_transmit_test.v", 149, 452); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("udp_transmit_test.v", 151, 496); // bP
+selectCodeEditor("udp_transmit_test.v", 150, 497); // bP
+selectCodeEditor("udp_transmit_test.v", 150, 285); // bP
+selectCodeEditor("udp_transmit_test.v", 21, 521); // bP
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // m
+// Device view-level: 0,5
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1104 ms.
+dismissDialog("Re-customize IP"); // N
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1062 ms.
+// Elapsed time: 20 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Re-customize IP"); // r
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1186 ms.
+dismissDialog("Re-customize IP"); // N
+setText("PRIMARY PORT", "clk_in0"); // B
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1649 ms.
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.PRIMARY_PORT {clk_in0}] [get_ips clk_wiz_0] 
+// aI (cr): Generate Output Products: addNotify
+// [GUI Memory]: 226 MB (+14692kb) [00:34:48]
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/sim_scripts -ip_user_files_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files -ipstatic_source_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/modelsim} {questa=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/questa} {riviera=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/riviera} {activehdl=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 10 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+dismissDialog("Managing Output Products"); // bz
+selectButton("OptionPane.button", "OK"); // JButton
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_ip_10g.xdc", 4); // m
+selectCodeEditor("udp_ip_10g.xdc", 785, 165); // bP
+selectCodeEditor("udp_ip_10g.xdc", 615, 80); // bP
+selectCodeEditor("udp_ip_10g.xdc", 385, 160); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 2); // m
+selectCodeEditor("clk_wiz_0_clk_wiz.v", 176, 187); // G
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h
+selectCodeEditor("clk_wiz_0_clk_wiz.v", 180, 100); // G
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_transmit_test.v", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_ip_10g.xdc", 4); // m
+selectCodeEditor("udp_ip_10g.xdc", 701, 156); // bP
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 2); // m
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_ip_10g.xdc", 4); // m
+selectCodeEditor("udp_ip_10g.xdc", 838, 139); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_ip_10g.xdc", 4); // m
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_2_420 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// Tcl Message: launch_runs synth_2_420 -jobs 2 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Jun 28 10:53:39 2021] Launched synth_2_420... Run output will be captured here: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/runme.log 
+// 'k' command handler elapsed time: 7 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1520 ms.
+dismissDialog("Re-customize IP"); // N
+// Elapsed time: 22 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectCheckBox((HResource) null, "clk_out2", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1871 ms.
+selectCheckBox((HResource) null, "clk_out1", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "clk_out3", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "clk_out3", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "clk_out1", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1172 ms.
+selectCheckBox((HResource) null, "clk_out2", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2512 ms.
+selectCheckBox((HResource) null, "clk_out2", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2194 ms.
+selectCheckBox((HResource) null, "clk_out2", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1196 ms.
+selectCheckBox((HResource) null, "clk_out1", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1178 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1011 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectCheckBox((HResource) null, "clk_out1", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1366 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+// [GUI Memory]: 238 MB (+771kb) [00:39:10]
+dismissDialog("Re-customize IP"); // r
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, true); // D - Node
+// ag (cr): Synthesis Failed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// [GUI Memory]: 258 MB (+7897kb) [00:39:16]
+dismissDialog("Synthesis Failed"); // ag
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_transmit_test.v", 5); // m
+selectCodeEditor("udp_transmit_test.v", 100, 160); // bP
+selectCodeEditor("udp_transmit_test.v", 100, 160, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("udp_transmit_test.v", 203, 210); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1255 ms.
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+selectCheckBox((HResource) null, "Allow Override Mode", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1337 ms.
+// Elapsed time: 16 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+setText("CLK OUT1 PORT", "clk_out0"); // B
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2168 ms.
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// r (cr): Re-customize IP: addNotify
+// bz (r):  Re-customize IP : addNotify
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.CLK_OUT1_PORT {clk_out0} CONFIG.OVERRIDE_MMCM {true}] [get_ips clk_wiz_0] 
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bz
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/sim_scripts -ip_user_files_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files -ipstatic_source_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/modelsim} {questa=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/questa} {riviera=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/riviera} {activehdl=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("udp_transmit_test.v", 115, 9); // bP
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+selectCodeEditor("udp_transmit_test.v", 105, 122); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Managing Output Products"); // bz
+selectButton("OptionPane.button", "OK"); // JButton
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 2); // m
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 2); // m
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1324 ms.
+dismissDialog("Re-customize IP"); // N
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_transmit_test.v", 5); // m
+// Elapsed time: 10 seconds
+selectCheckBox((HResource) null, "Enable Clock Monitoring", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2064 ms.
+selectCheckBox((HResource) null, "Enable Clock Monitoring", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2654 ms.
+// [GUI Memory]: 276 MB (+5114kb) [00:42:23]
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 12 seconds
+selectRadioButton((HResource) null, "PLL"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  3074 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "MMCM"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  3047 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 45 seconds
+selectRadioButton((HResource) null, "PLL"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  2864 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 16 seconds
+selectRadioButton((HResource) null, "MMCM"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  3412 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "PLL"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  3495 ms.
+selectRadioButton((HResource) null, "PLL"); // cQ
+// [GUI Memory]: 292 MB (+2569kb) [00:43:51]
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectCheckBox((HResource) null, "clk_out1", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1916 ms.
+selectCheckBox((HResource) null, "clk_out1", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2321 ms.
+selectCheckBox((HResource) null, "clk_out1", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "clk_out1", false); // g: FALSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1974 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2627 ms.
+// Elapsed time: 21 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "PLLE2 Settings", 3); // cV
+// Elapsed time: 16 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, "PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE", (HResource) null, "Output Clocks", 1, false, true); // cV - Double Click
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+// Elapsed time: 151 seconds
+setText("PRIMARY PORT", "clk_in1"); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3507 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2901 ms.
+// Elapsed time: 14 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+// Elapsed time: 11 seconds
+setText("CLK OUT1 PORT", "clk_out1"); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3413 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+// Elapsed time: 17 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "PLLE2 Settings", 3); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "PLLE2 Settings", 3); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+// Elapsed time: 11 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "MMCM"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  3360 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "PLL"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  3421 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3860 ms.
+// Elapsed time: 11 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// r (cr): Re-customize IP: addNotify
+// bz (r):  Re-customize IP : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.CLKOUT1_USED {true} CONFIG.ENABLE_CLOCK_MONITOR {false} CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin} CONFIG.PRIMARY_PORT {clk_in1} CONFIG.CLK_OUT1_PORT {clk_out1} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_BANDWIDTH {OPTIMIZED} CONFIG.MMCM_CLKFBOUT_MULT_F {10} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {10}] [get_ips clk_wiz_0] 
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bz
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/sim_scripts -ip_user_files_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files -ipstatic_source_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/modelsim} {questa=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/questa} {riviera=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/riviera} {activehdl=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+selectCodeEditor("udp_transmit_test.v", 104, 142); // bP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+selectCodeEditor("udp_transmit_test.v", 113, 34); // bP
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Managing Output Products"); // bz
+selectButton("OptionPane.button", "OK"); // JButton
+selectCodeEditor("udp_transmit_test.v", 105, 140); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 2); // m
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v), inst : clk_wiz_0_clk_wiz (clk_wiz_0_clk_wiz.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v), inst : clk_wiz_0_clk_wiz (clk_wiz_0_clk_wiz.v)]", 4, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// [GUI Memory]: 308 MB (+1099kb) [00:49:56]
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1335 ms.
+dismissDialog("Re-customize IP"); // N
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 14 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "PLLE2 Settings", 3); // cV
+selectCheckBox((HResource) null, "Allow Override Mode", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2991 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// r (cr): Re-customize IP: addNotify
+// bz (r):  Re-customize IP : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.OVERRIDE_MMCM {false} CONFIG.MMCM_CLKFBOUT_MULT_F {9} CONFIG.MMCM_CLKOUT0_DIVIDE_F {9}] [get_ips clk_wiz_0] 
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: FILE_SET_CHANGE
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bz
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/sim_scripts -ip_user_files_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files -ipstatic_source_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/modelsim} {questa=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/questa} {riviera=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/riviera} {activehdl=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h
+// TclEventType: FILE_SET_CHANGE
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+dismissDialog("Managing Output Products"); // bz
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1353 ms.
+// Elapsed time: 11 seconds
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+// Elapsed time: 13 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "PLL"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  3726 ms.
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Re-customize IP"); // r
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_ip_10g.xdc", 3); // m
+// r (cr): Re-customize IP: addNotify
+// [GUI Memory]: 328 MB (+4678kb) [00:52:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  1454 ms.
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3497 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "MMCM"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  3962 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "PLL"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  3958 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "MMCM"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  4393 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// r (cr): Re-customize IP: addNotify
+// bz (r):  Re-customize IP : addNotify
+// Tcl Message: set_property -dict [list CONFIG.PRIMITIVE {MMCM} CONFIG.PRIM_SOURCE {No_buffer} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_BANDWIDTH {OPTIMIZED} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.000} CONFIG.CLKOUT1_JITTER {130.958} CONFIG.CLKOUT1_PHASE_ERROR {98.575}] [get_ips clk_wiz_0] 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bz
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 353 MB (+9077kb) [00:53:16]
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/sim_scripts -ip_user_files_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files -ipstatic_source_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/modelsim} {questa=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/questa} {riviera=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/riviera} {activehdl=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_transmit_test.v", 4); // m
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Managing Output Products"); // bz
+selectButton("OptionPane.button", "OK"); // JButton
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 2); // m
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v), inst : clk_wiz_0_clk_wiz (clk_wiz_0_clk_wiz.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v), inst : clk_wiz_0_clk_wiz (clk_wiz_0_clk_wiz.v)]", 4, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 2); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 267 MB. Current time: 6/28/21, 11:10:20 AM BRT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 5); // m
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 2); // m
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2330 ms.
+// Elapsed time: 22 seconds
+dismissDialog("Re-customize IP"); // N
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  4178 ms.
+// Elapsed time: 563 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectCheckBox((HResource) null, "clk_out2", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3853 ms.
+selectCheckBox((HResource) null, "clk_out2", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3824 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3506 ms.
+// Elapsed time: 12 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectCheckBox((HResource) null, "clk_out2", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3976 ms.
+selectCheckBox((HResource) null, "clk_out2", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3302 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+selectCheckBox((HResource) null, "Allow Override Mode", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3733 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3686 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  4336 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3758 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3543 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  4817 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3724 ms.
+// Elapsed time: 57 seconds
+selectCheckBox(PAResourceTtoZ.XPG_IPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", false); // g: FALSE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Resource", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3990 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3537 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3926 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 51 seconds
+selectRadioButton((HResource) null, "PLL"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  5689 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 14 seconds
+selectRadioButton((HResource) null, "MMCM"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  5071 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+// Elapsed time: 21 seconds
+setText("MMCM DIVCLK DIVIDE", "2"); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2272 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+// Elapsed time: 11 seconds
+setText("MMCM DIVCLK DIVIDE", "1"); // B
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  4841 ms.
+// Elapsed time: 13 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 14 seconds
+selectRadioButton((HResource) null, "Automatic Control Off-Chip"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  4319 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "User-Controlled On-Chip"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  4490 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "User-Controlled Off-Chip"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  3922 ms.
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "Automatic Control On-Chip"); // cQ
+// WARNING: HEventQueue.dispatchEvent() is taking  4276 ms.
+selectCheckBox((HResource) null, "clk_out2", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  4117 ms.
+selectCheckBox((HResource) null, "clk_out2", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  4323 ms.
+// Elapsed time: 14 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+// Elapsed time: 13 seconds
+selectButton(PAResourceAtoD.CustomizeCoreDialog_SWITCH_TO_DEFAULTS, "Switch to Defaults"); // E
+selectButton("OptionPane.button", "Yes"); // JButton
+// [GUI Memory]: 374 MB (+3832kb) [01:10:09]
+// bz (r):  Reset Configuration : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2503 ms.
+// Elapsed time: 19 seconds
+dismissDialog("Reset Configuration"); // bz
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Resource", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, "PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE", (HResource) null, "Resource", 1, false, true); // cV - Double Click
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+// Elapsed time: 19 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// r (cr): Re-customize IP: addNotify
+// bz (r):  Re-customize IP : addNotify
+// Tcl Message: reset_property  ALL_PROPS  [get_ips clk_wiz_1] 
+// Tcl Message: ERROR: [IP_Flow 19-3449] Failed to set configurable element 'BUSIF_ENABLEMENT.CLOCK_CLK_IN2' to value 'false' for 'IP 'clk_wiz_1''. 
+// Tcl Message: ERROR: [Common 17-39] 'reset_property' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'reset_property' failed due to earlier errors.  
+dismissDialog("Re-customize IP"); // bz
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2139 ms.
+// Elapsed time: 19 seconds
+dismissDialog("Re-customize IP"); // N
+// Elapsed time: 196 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+// Elapsed time: 55 seconds
+selectCheckBox((HResource) null, "Allow Override Mode", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  5133 ms.
+// Elapsed time: 16 seconds
+selectMenuItem(PAResourceTtoZ.XPG_ParamTable_EXPORT_TO_SPREADSHEET, "Export to Spreadsheet..."); // ak
+// B (cr): Export Table to Spreadsheet: addNotify
+setSpinner(RDIResource.ExportToSpreadsheetDialog_ROWS_PER_SHEET, "1"); // U
+setSpinner(RDIResource.ExportToSpreadsheetDialog_ROWS_PER_SHEET, "1"); // U
+setSpinner(RDIResource.ExportToSpreadsheetDialog_ROWS_PER_SHEET, "1"); // U
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Export Table to Spreadsheet"); // B
+selectMenuItem(PAResourceTtoZ.XPG_ParamTable_EXPORT_TO_SPREADSHEET, "Export to Spreadsheet..."); // ak
+// B (cr): Export Table to Spreadsheet: addNotify
+setSpinner(RDIResource.ExportToSpreadsheetDialog_ROWS_PER_SHEET, "1"); // U
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "OK"); // JButton
+dismissDialog("Export Table to Spreadsheet"); // B
+selectMenuItem(PAResourceTtoZ.XPG_ParamTable_EXPORT_TO_SPREADSHEET, "Export to Spreadsheet..."); // ak
+// B (cr): Export Table to Spreadsheet: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "OK"); // JButton
+dismissDialog("Export Table to Spreadsheet"); // B
+selectCheckBox(PAResourceTtoZ.XPG_IPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", true); // g: TRUE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Resource", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+// Elapsed time: 10 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+// Elapsed time: 17 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+selectCheckBox((HResource) null, "Safe Clock Startup", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  4894 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, PAResourceTtoZ.XPG_BasePanel_IP_SYMBOL, "IP Symbol", 0); // cV
+selectCheckBox(PAResourceTtoZ.XPG_IPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", false); // g: FALSE
+selectCheckBox(PAResourceTtoZ.XPG_IPSymbol_SHOW_DISABLED_PORTS, "Show disabled ports", true); // g: TRUE
+selectCheckBox((HResource) null, "Safe Clock Startup", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  4509 ms.
+// Elapsed time: 30 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+selectCheckBox((HResource) null, "Allow Override Mode", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  4935 ms.
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// [GUI Memory]: 394 MB (+1581kb) [01:19:26]
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.USE_SAFE_CLOCK_STARTUP {false} CONFIG.OVERRIDE_MMCM {false} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO}] [get_ips clk_wiz_0] 
+// aI (cr): Generate Output Products: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 5, true); // D - Node
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 276 MB. Current time: 6/28/21, 11:36:07 AM BRT
+// Engine heap size: 2,481 MB. GUI used memory: 277 MB. Current time: 6/28/21, 11:36:07 AM BRT
+// WARNING: HEventQueue.dispatchEvent() is taking  4243 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// bz (cr):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+// Tcl Message: close_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2856.203 ; gain = 16.609 
+dismissDialog("Closing"); // bz
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 5, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci), clk_wiz_1 (clk_wiz_1.v), inst : clk_wiz_1_clk_wiz (clk_wiz_1_clk_wiz.v)]", 7, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1097 ms.
+dismissDialog("Re-customize IP"); // N
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  2007 ms.
+// Elapsed time: 12 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.PRIM_SOURCE {No_buffer}] [get_ips clk_wiz_1] 
+// aI (cr): Generate Output Products: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_1'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_1'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_1'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_1'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_1'... 
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] -directory D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/sim_scripts -ip_user_files_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files -ipstatic_source_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/modelsim} {questa=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/questa} {riviera=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/riviera} {activehdl=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true); // D - Node
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Managing Output Products"); // bz
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci), clk_wiz_0 (clk_wiz_0.v)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1530 ms.
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// aI (cr): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+selectButton("OptionPane.button", "OK"); // JButton
+selectCodeEditor("udp_ip_10g.xdc", 468, 171); // bP
+// Elapsed time: 69 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1218 ms.
+dismissDialog("Re-customize IP"); // N
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1985 ms.
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin}] [get_ips clk_wiz_0] 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// r (cr): Re-customize IP: addNotify
+// bz (r):  Re-customize IP : addNotify
+// TclEventType: FILESET_UPDATE_IP
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bz
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/sim_scripts -ip_user_files_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files -ipstatic_source_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/modelsim} {questa=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/questa} {riviera=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/riviera} {activehdl=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 12 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1296 ms.
+dismissDialog("Re-customize IP"); // N
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1940 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// r (cr): Re-customize IP: addNotify
+// TclEventType: FILE_SET_CHANGE
+// bz (r):  Re-customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin}] [get_ips clk_wiz_1] 
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bz
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_1'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_1'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_1'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_1'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_1'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] -directory D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/sim_scripts -ip_user_files_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files -ipstatic_source_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/modelsim} {questa=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/questa} {riviera=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/riviera} {activehdl=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 1); // m
+dismissDialog("Managing Output Products"); // bz
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h
+selectCodeEditor("clk_wiz_0_clk_wiz.v", 124, 215); // G
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 2); // m
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Save Project"); // am
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2_420 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// Tcl Message: launch_runs synth_2_420 -jobs 2 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// 'k' command handler elapsed time: 6 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_transmit_test.v", 4); // m
+// Tcl Message: [Mon Jun 28 11:40:30 2021] Launched synth_2_420... Run output will be captured here: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 313 MB. Current time: 6/28/21, 12:06:11 PM BRT
+// Elapsed time: 1800 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Synthesis Completed"); // ag
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1017 ms.
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cV
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1526 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.PRIM_SOURCE {No_buffer}] [get_ips clk_wiz_0] 
+// aI (cr): Generate Output Products: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// PAPropertyPanels.initPanels (clk_wiz_0.xci) elapsed time: 0.2s
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/sim_scripts -ip_user_files_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files -ipstatic_source_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/modelsim} {questa=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/questa} {riviera=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/riviera} {activehdl=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 5, true); // D - Node
+// TclEventType: PROJECT_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 5, true, false, false, false, false, true); // D - Double Click - Node
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Managing Output Products"); // bz
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 5, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 5, true, false, false, false, false, true); // D - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // N
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1475 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// r (cr): Re-customize IP: addNotify
+// TclEventType: FILE_SET_CHANGE
+// bz (r):  Re-customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.PRIM_SOURCE {No_buffer}] [get_ips clk_wiz_1] 
+// aI (cr): Generate Output Products: addNotify
+dismissDialog("Re-customize IP"); // bz
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_1'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_1'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_1'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_1'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_1'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci] -directory D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/sim_scripts -ip_user_files_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files -ipstatic_source_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/modelsim} {questa=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/questa} {riviera=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/riviera} {activehdl=D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+dismissDialog("Managing Output Products"); // bz
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2_420 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_2_420 -jobs 2 
+// Tcl Message: [Mon Jun 28 12:12:24 2021] Launched synth_2_420... Run output will be captured here: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 352 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Synthesis Completed"); // ag
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks [get_clocks -of_objects [get_pins clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]]]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69]. ]", 1); // ah
+// Elapsed time: 49 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks [get_clocks -of_objects [get_pins clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]]]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69]. , [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69]. ]", 2, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks [get_clocks -of_objects [get_pins clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]]]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69]. , [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69]. ]", 2, false, false, false, false, true, false); // ah - Popup Trigger
+// Elapsed time: 326 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_ip_10g.xdc", 3); // m
+selectCodeEditor("udp_ip_10g.xdc", 299, 225); // bP
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 1); // m
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h
+selectCodeEditor("clk_wiz_0_clk_wiz.v", 120, 242); // G
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mmcm", true); // l
+// Elapsed time: 16 seconds
+selectCodeEditor("clk_wiz_0_clk_wiz.v", 87, 204); // G
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_ip_10g.xdc", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 1); // m
+// Elapsed time: 74 seconds
+selectCodeEditor("clk_wiz_0_clk_wiz.v", 196, 236); // G
+// Elapsed time: 20 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Clock Interaction]", 24, false); // u
+// bz (cr):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_2_420 -name synth_2_420 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7k420tiffg901-2L 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 333 MB. Current time: 6/28/21, 12:28:18 PM BRT
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.3s
+// Device: addNotify
+// [GUI Memory]: 415 MB (+1180kb) [02:11:56]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  3495 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.748 . Memory (MB): peak = 2856.203 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 992 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:70] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:97] 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:97] 
+// Tcl Message: Finished Parsing XDC File [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc] Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc] for cell 'ethernet_core_0_A/inst/xmac/inst' 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc:2] 
+// Tcl Message: Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc] for cell 'ethernet_core_0_A/inst/xmac/inst' Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc] for cell 'ethernet_core_0_B/inst/xmac/inst' 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc:2] 
+// Tcl Message: Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc] for cell 'ethernet_core_0_B/inst/xmac/inst' Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc] for cell 'ethernet_core_0_A/inst/xpcs/inst' 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc:48] 
+// Tcl Message: Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc] for cell 'ethernet_core_0_A/inst/xpcs/inst' Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc] for cell 'ethernet_core_0_B/inst/xpcs/inst' 
+// Tcl Message: INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc:48] 
+// Tcl Message: Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc] for cell 'ethernet_core_0_B/inst/xpcs/inst' Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_late.xdc] for cell 'clk_wiz_1/inst' Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_late.xdc] for cell 'clk_wiz_1/inst' Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'clk_wiz_0/inst' Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'clk_wiz_0/inst' 
+// Tcl Message: INFO: [Project 1-1715] 2 XPM XDC files have been applied to the design. INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-1687] 10 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design. 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2929.691 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 302 instances were transformed.   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 198 instances   RAM64M => RAM64M (RAMD64E(x4)): 96 instances   RAM64X1D => RAM64X1D (RAMD64E(x2)): 4 instances   RAM64X1S => RAM64X1S (RAMS64E): 4 instances  
+// Device view-level: 0,0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 2954.426 ; gain = 98.223 
+// Run Command: PAResourceCommand.PACommandNames_REPORT_CLOCK_INTERACTION
+// ae (cr): Report Clock Interaction: addNotify
+// U (cr): Critical Messages: addNotify
+// Elapsed time: 20 seconds
+dismissDialog("Open Synthesized Design"); // bz
+selectTab(PAResourceQtoS.ReportClockInteractionDialog_TABBED_PANE, PAResourceTtoZ.TimingDialogUtils_TIMER_SETTINGS, "Timer Settings", 1); // i
+selectTab(PAResourceQtoS.ReportClockInteractionDialog_TABBED_PANE, PAResourceQtoS.ReportClockInteractionDialog_OPTIONS, "Options", 0); // i
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'l' command handler elapsed time: 21 seconds
+dismissDialog("Report Clock Interaction"); // ae
+// Tcl Message: report_clock_interaction -delay_type min_max -significant_digits 3 -name timing_1 
+// bz (cr):  Report Clock Interaction : addNotify
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: CLOCK_INTERACTION_UPDATED
+// Tcl Message: report_clock_interaction: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 3061.008 ; gain = 106.582 
+dismissDialog("Report Clock Interaction"); // bz
+// Elapsed time: 65 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // U
+// Elapsed time: 18 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+// Elapsed time: 11 seconds
+selectTableHeader(PAResourceAtoD.ClockPairTablePanel_CLOCK_PAIR_TABLE, "Destination Clock", 2); // D
+selectTableHeader(PAResourceAtoD.ClockPairTablePanel_CLOCK_PAIR_TABLE, "Destination Clock", 2, false, false, false, false, true); // D - Double Click
+selectTableHeader(PAResourceAtoD.ClockPairTablePanel_CLOCK_PAIR_TABLE, "Source Clock", 1); // D
+// Elapsed time: 20 seconds
+selectTableHeader(PAResourceAtoD.ClockPairTablePanel_CLOCK_PAIR_TABLE, "Source Clock", 1); // D
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_ip_10g.xdc", 4); // m
+selectCodeEditor("udp_ip_10g.xdc", 698, 138); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Clock Interaction - timing_1", 6); // m
+// Elapsed time: 104 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_transmit_test.v", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_ip_10g.xdc", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // m
+// Device view-level: 0,5
+unMinimizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // az
+// Device view-level: 0,0
+// Elapsed time: 31 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks [get_clocks -of_objects [get_pins clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]]]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69]. ]", 1); // ah
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Clock Networks]", 24, false); // u
+// Run Command: PAResourceCommand.PACommandNames_REPORT_CLOCK_NETWORKS
+// a (cr): Report Clock Networks: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Report Clock Networks"); // a
+// bz (cr):  Report Clock Networks : addNotify
+// TclEventType: TIMING_CLOCK_NETWORKS_UPDATED
+// Tcl Message: report_clock_networks -name {network_1} 
+dismissDialog("Report Clock Networks"); // bz
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 103441, 1417605); // E
+// Elapsed time: 10 seconds
+expandTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, Unconstrained]", 6); // j
+collapseTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, Unconstrained]", 6); // j
+expandTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, gtrefclk0_p_B (156.25 MHz) (drives 6085 loads)]", 5); // j
+collapseTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, gtrefclk0_p_B (156.25 MHz) (drives 6085 loads)]", 5); // j
+expandTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, gtrefclk0_p_A (156.25 MHz) (drives 6087 loads)]", 4); // j
+collapseTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, gtrefclk0_p_A (156.25 MHz) (drives 6087 loads)]", 4); // j
+// Elapsed time: 10 seconds
+expandTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, gtrefclk0_p_A (156.25 MHz) (drives 6087 loads)]", 4); // j
+collapseTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, gtrefclk0_p_A (156.25 MHz) (drives 6087 loads)]", 4); // j
+expandTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, ethernet_core_0_A/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/TXOUTCLK (322.27 MHz) (drives 208 loads)]", 1); // j
+collapseTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, ethernet_core_0_A/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/TXOUTCLK (322.27 MHz) (drives 208 loads)]", 1); // j
+expandTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, ethernet_core_0_A/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/TXOUTCLK (322.27 MHz) (drives 208 loads)]", 1); // j
+collapseTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, ethernet_core_0_A/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/TXOUTCLK (322.27 MHz) (drives 208 loads), TXOUTCLK]", 2); // j
+collapseTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, ethernet_core_0_A/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/TXOUTCLK (322.27 MHz) (drives 208 loads)]", 1); // j
+expandTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/RXOUTCLK (322.27 MHz) (drives 1437 loads)]", 2); // j
+collapseTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/RXOUTCLK (322.27 MHz) (drives 1437 loads)]", 2); // j
+expandTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/TXOUTCLK (322.27 MHz) (drives 208 loads)]", 3); // j
+collapseTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i/TXOUTCLK (322.27 MHz) (drives 208 loads)]", 3); // j
+expandTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, gtrefclk0_p_A (156.25 MHz) (drives 6087 loads)]", 4); // j
+collapseTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, gtrefclk0_p_A (156.25 MHz) (drives 6087 loads)]", 4); // j
+expandTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, gtrefclk0_p_B (156.25 MHz) (drives 6085 loads)]", 5); // j
+collapseTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, gtrefclk0_p_B (156.25 MHz) (drives 6085 loads)]", 5); // j
+expandTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, Unconstrained]", 6); // j
+collapseTree(PAResourceAtoD.ClockNetworksReportView_CLOCK_NETWORK_TREE, "[top objects, Unconstrained]", 6); // j
+// WARNING: HEventQueue.dispatchEvent() is taking  6070798 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 365 MB. Current time: 6/28/21, 2:21:22 PM BRT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6073230 ms. Increasing delay to 18219690 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1891 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10797478 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 363 MB. Current time: 6/28/21, 5:21:47 PM BRT
+// WARNING: HEventQueue.dispatchEvent() is taking  1791957358 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 2053ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1949 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 362 MB. Current time: 7/19/21, 11:08:19 AM BRT
+// WARNING: HEventQueue.dispatchEvent() is taking  9768 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1791969992 ms. Increasing delay to 3000 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 268670ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  268670 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2666 ms.
+// Device view-level: 0,1
+// WARNING: HEventQueue.dispatchEvent() is taking  1826 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1755 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1031 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 362 MB. Current time: 7/19/21, 11:13:35 AM BRT
+// Device view-level: 0,0
+// Elapsed time: 1809499 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_ip_10g.xdc", 4); // m
+selectCodeEditor("udp_ip_10g.xdc", 430, 243); // bP
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+selectCodeEditor("udp_ip_10g.xdc", 341, 106); // bP
+// Elapsed time: 32 seconds
+selectCodeEditor("udp_ip_10g.xdc", 268, 156); // bP
+// Elapsed time: 32 seconds
+selectCodeEditor("udp_ip_10g.xdc", 508, 455); // bP
+selectCodeEditor("udp_ip_10g.xdc", 433, 494); // bP
+selectCodeEditor("udp_ip_10g.xdc", 1450, 621); // bP
+selectCodeEditor("udp_ip_10g.xdc", 1090, 620); // bP
+selectCodeEditor("udp_ip_10g.xdc", 906, 625); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 3); // m
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_transmit_test.v", 5); // m
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2); // D
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true); // D - Node
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE, "Re-customize IP..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1056 ms.
+dismissDialog("Re-customize IP"); // N
+// Elapsed time: 81 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Re-customize IP"); // r
+// Elapsed time: 239 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 2, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE, "Re-customize IP..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // N
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cV
+selectCheckBox((HResource) null, "clk_out2", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectCheckBox((HResource) null, "clk_out2", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 15 seconds
+selectCheckBox((HResource) null, "clk_out2", true); // g: TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Elapsed time: 85 seconds
+selectCheckBox((HResource) null, "clk_out2", false); // g: FALSE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cV
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cV
+// Elapsed time: 18 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cV
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+// [GUI Memory]: 448 MB (+13289kb) [505:08:42]
+dismissDialog("Re-customize IP"); // r
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Clock Interaction - timing_1", 6); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_ip_10g.xdc", 4); // m
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+selectCodeEditor("udp_ip_10g.xdc", 440, 393); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("udp_ip_10g.xdc", 617, 349); // bP
+selectCodeEditor("udp_ip_10g.xdc", 815, 368); // bP
+selectCodeEditor("udp_ip_10g.xdc", 1001, 370); // bP
+selectCodeEditor("udp_ip_10g.xdc", 1173, 359); // bP
+selectCodeEditor("udp_ip_10g.xdc", 1173, 359, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("udp_ip_10g.xdc", 1148, 362); // bP
+selectCodeEditor("udp_ip_10g.xdc", 1152, 362); // bP
+selectCodeEditor("udp_ip_10g.xdc", 807, 360); // bP
+selectCodeEditor("udp_ip_10g.xdc", 818, 369); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 2); // m
+// Elapsed time: 16 seconds
+selectCodeEditor("clk_wiz_1_clk_wiz.v", 4, 285); // G
+selectCodeEditor("clk_wiz_1_clk_wiz.v", 178, 395); // G
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_1_clk_wiz.v", 2); // m
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), clk_wiz_1 : clk_wiz_1 (clk_wiz_1.xci)]", 3, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE, "Re-customize IP..."); // ak
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1013 ms.
+dismissDialog("Re-customize IP"); // N
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// aI (cr): Generate Output Products: addNotify
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clk_wiz_0_clk_wiz.v", 3); // m
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // aE
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ak
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cr):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2_420 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_2_420 -jobs 2 
+// Tcl Message: [Mon Jul 19 11:27:18 2021] Launched synth_2_420... Run output will be captured here: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 510 ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 476 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Synthesis Completed"); // ag
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g: FALSE
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, true); // g: TRUE
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 33, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_2 -jobs 2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Jul 19 11:35:42 2021] Launched impl_2... Run output will be captured here: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/impl_2/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Failed: addNotify
+// Elapsed time: 421 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g: FALSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/19/21, 11:43:35 AM BRT
+// Elapsed time: 179 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks [get_clocks -of_objects [get_pins clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]]]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69]. ]", 1); // ah
+// Elapsed time: 14 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks [get_clocks -of_objects [get_pins clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]]]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69]. ]", 11); // ah
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks [get_clocks -of_objects [get_pins clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]]]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69]. ]", 11); // ah
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69]. ]", 12); // ah
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69]. ]", 12); // ah
+// Elapsed time: 29 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, synth_2_420, General Messages, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks [get_clocks -of_objects [get_pins clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0]]]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69]. ]", 7); // ah
+// Elapsed time: 50 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v)]", 1, true); // D - Node
+// Elapsed time: 18 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), mkNetwork_A : mkNetwork (mkNetwork.v)]", 4); // D
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sfp_10G (udp_transmit_test.v), mkNetwork_A : mkNetwork (mkNetwork.v), filter : mkFilter (mkFilter.v)]", 6); // D
+// Elapsed time: 377 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_ip_10g.xdc", 4); // m
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // F
+selectCodeEditor("udp_ip_10g.xdc", 232, 507, false, false, false, true, false); // bP - Popup Trigger
+selectCodeEditor("udp_ip_10g.xdc", 145, 514); // bP
+// Elapsed time: 90 seconds
+selectCodeEditor("udp_ip_10g.xdc", 1356, 328); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("udp_ip_10g.xdc", 490, 331); // bP
+// Elapsed time: 62 seconds
+typeControlKey((HResource) null, "udp_ip_10g.xdc", 'c'); // bP
+typeControlKey((HResource) null, "udp_ip_10g.xdc", 'v'); // bP
+// Elapsed time: 141 seconds
+selectCodeEditor("udp_ip_10g.xdc", 921, 81); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("udp_ip_10g.xdc", 1290, 78); // bP
+// Elapsed time: 43 seconds
+selectCodeEditor("udp_ip_10g.xdc", 535, 73); // bP
+// Elapsed time: 66 seconds
+typeControlKey((HResource) null, "udp_ip_10g.xdc", 'c'); // bP
+typeControlKey((HResource) null, "udp_ip_10g.xdc", 'v'); // bP
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "udp_ip_10g.xdc", 'c'); // bP
+typeControlKey((HResource) null, "udp_ip_10g.xdc", 'v'); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2_420 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_2_420 -jobs 2 
+// Tcl Message: [Mon Jul 19 12:02:11 2021] Launched synth_2_420... Run output will be captured here: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 11 seconds
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g: FALSE
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, true); // g: TRUE
+// Elapsed time: 11 seconds
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g: FALSE
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 210 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Synthesis Completed"); // ag
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, true); // g: TRUE
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Constraints 18-374] create_generated_clock: missing -source argument. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69]. ]", 1); // ah
+// Elapsed time: 42 seconds
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g: TRUE
+// Elapsed time: 18 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3321] set_false_path : Empty from list for constraint at line 76 of d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:76]. ]", 9); // ah
+// Elapsed time: 21 seconds
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g: FALSE
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Constraints 18-374] create_generated_clock: missing -source argument. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:69]. ]", 1); // ah
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Clock Interaction - timing_1", 6); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_transmit_test.v", 5); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_ip_10g.xdc", 4); // m
+selectCodeEditor("udp_ip_10g.xdc", 438, 219); // bP
+// Elapsed time: 19 seconds
+selectCodeEditor("udp_ip_10g.xdc", 531, 79); // bP
+selectCodeEditor("udp_ip_10g.xdc", 1159, 71, true, false, false, false, false); // bP - Shift Key
+typeControlKey((HResource) null, "udp_ip_10g.xdc", 'v'); // bP
+// Elapsed time: 47 seconds
+typeControlKey((HResource) null, "udp_ip_10g.xdc", 'v'); // bP
+typeControlKey(null, null, 'z');
+// Elapsed time: 44 seconds
+selectCodeEditor("udp_ip_10g.xdc", 993, 124); // bP
+// Elapsed time: 82 seconds
+typeControlKey((HResource) null, "udp_ip_10g.xdc", 'c'); // bP
+typeControlKey((HResource) null, "udp_ip_10g.xdc", 'v'); // bP
+// Elapsed time: 38 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 398 MB. Current time: 7/19/21, 12:13:35 PM BRT
+// Elapsed time: 80 seconds
+selectCodeEditor("udp_ip_10g.xdc", 343, 191); // bP
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2_420 
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Launch Runs"); // f
+selectCodeEditor("udp_ip_10g.xdc", 510, 133); // bP
+selectCodeEditor("udp_ip_10g.xdc", 647, 57); // bP
+// Elapsed time: 97 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cr):  Resetting Runs : addNotify
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_2_420 -jobs 2 
+// Tcl Message: [Mon Jul 19 12:15:51 2021] Launched synth_2_420... Run output will be captured here: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 67 seconds
+selectCodeEditor("udp_ip_10g.xdc", 259, 33); // bP
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 160 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Synthesis Completed"); // ag
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks ifcA]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:71]. ]", 1); // ah
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_transmit_test.v", 5); // m
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "udp_ip_10g.xdc", 4); // m
+selectCodeEditor("udp_ip_10g.xdc", 171, 119); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("udp_ip_10g.xdc", 44, 63); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("udp_ip_10g.xdc", 17, 155); // bP
+// Elapsed time: 104 seconds
+typeControlKey((HResource) null, "udp_ip_10g.xdc", 'c'); // bP
+typeControlKey((HResource) null, "udp_ip_10g.xdc", 'v'); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2_420 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_2_420 -jobs 2 
+// Tcl Message: [Mon Jul 19 12:23:18 2021] Launched synth_2_420... Run output will be captured here: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 223 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Synthesis Completed"); // ag
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks ifcA]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:71]. ]", 1); // ah
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Constraints 18-851] Could not find an automatically derived clock matching the supplied criteria for renaming. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:70]. ]", 5); // ah
+// Elapsed time: 131 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-165] Too many positional options when parsing '', please type 'set_false_path -help' for usage info. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:119]. ]", 7); // ah
+// Elapsed time: 11 seconds
+selectCodeEditor("udp_ip_10g.xdc", 398, 213); // bP
+selectCodeEditor("udp_ip_10g.xdc", 374, 180); // bP
+// Elapsed time: 19 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_2_420 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_2_420 -jobs 2 
+// Tcl Message: [Mon Jul 19 12:30:01 2021] Launched synth_2_420... Run output will be captured here: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 399 MB. Current time: 7/19/21, 12:43:35 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 398 MB. Current time: 7/19/21, 1:13:36 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/19/21, 1:43:36 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/19/21, 2:13:37 PM BRT
+// Elapsed time: 6267 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Synthesis Completed"); // ag
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks ifcA]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:71]. ]", 1); // ah
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Constraints 18-851] Could not find an automatically derived clock matching the supplied criteria for renaming. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:70]. ]", 5); // ah
+// Elapsed time: 198 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks ifcA]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:71]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\GitHub\Filtro-FPGA\filter_10g_sfp.srcs\constrs_1\new\udp_ip_10g.xdc;-;;-;16;-;line;-;71;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks ifcA]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:71]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\GitHub\Filtro-FPGA\filter_10g_sfp.srcs\constrs_1\new\udp_ip_10g.xdc;-;;-;16;-;line;-;71;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks ifcA]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:71]. , [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks ifcB]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:102]. ]", 3, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\GitHub\Filtro-FPGA\filter_10g_sfp.srcs\constrs_1\new\udp_ip_10g.xdc;-;;-;16;-;line;-;102;-;;-;16;-;"); // ah
+// Elapsed time: 16 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks ifcA]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:71]. , [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:71]. ]", 2, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\GitHub\Filtro-FPGA\filter_10g_sfp.srcs\constrs_1\new\udp_ip_10g.xdc;-;;-;16;-;line;-;71;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks ifcA]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:71]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\GitHub\Filtro-FPGA\filter_10g_sfp.srcs\constrs_1\new\udp_ip_10g.xdc;-;;-;16;-;line;-;71;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks ifcA]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:71]. , [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:102]. ]", 4, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\GitHub\Filtro-FPGA\filter_10g_sfp.srcs\constrs_1\new\udp_ip_10g.xdc;-;;-;16;-;line;-;102;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Constraints 18-851] Could not find an automatically derived clock matching the supplied criteria for renaming. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:70]. ]", 5, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\GitHub\Filtro-FPGA\filter_10g_sfp.srcs\constrs_1\new\udp_ip_10g.xdc;-;;-;16;-;line;-;70;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Constraints 18-851] Could not find an automatically derived clock matching the supplied criteria for renaming. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:70]. , [Constraints 18-851] Could not find an automatically derived clock matching the supplied criteria for renaming. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:101]. ]", 6, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;D:\GitHub\Filtro-FPGA\filter_10g_sfp.srcs\constrs_1\new\udp_ip_10g.xdc;-;;-;16;-;line;-;101;-;;-;16;-;"); // ah
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 398 MB. Current time: 7/19/21, 2:43:37 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/19/21, 3:13:37 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/19/21, 3:43:38 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 398 MB. Current time: 7/19/21, 4:13:38 PM BRT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 19 ms. Decreasing delay to 2019 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 398 MB. Current time: 7/19/21, 4:43:38 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/19/21, 5:13:39 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 398 MB. Current time: 7/19/21, 5:43:39 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 398 MB. Current time: 7/19/21, 6:13:42 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/19/21, 6:43:42 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/19/21, 7:13:43 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 398 MB. Current time: 7/19/21, 7:43:43 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/19/21, 8:13:43 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/19/21, 8:43:44 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/19/21, 9:13:44 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/19/21, 9:43:44 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/19/21, 10:13:45 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 398 MB. Current time: 7/19/21, 10:43:45 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/19/21, 11:13:45 PM BRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/19/21, 11:43:46 PM BRT
+// WARNING: HEventQueue.dispatchEvent() is taking  27879624 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,481 MB. GUI used memory: 397 MB. Current time: 7/20/21, 7:56:11 AM BRT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1371 ms. Increasing delay to 4113 ms.

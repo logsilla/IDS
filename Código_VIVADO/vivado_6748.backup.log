@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Nov 05 12:05:05 2018
+# Process ID: 6748
+# Current directory: D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6692 D:\BaiduYunDownload\MIZ7035_VIP\S08_VIP\S08_CH07_udp_ip_10g_sfp\S08_CH07_udp_ip_10g_sfp\udp_ip_10g_sfp.xpr
+# Log file: D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/vivado.log
+# Journal file: D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/VIVADO2016/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:38 . Memory (MB): peak = 795.727 ; gain = 173.422
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 05 12:09:44 2018...

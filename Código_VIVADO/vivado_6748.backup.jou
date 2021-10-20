@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon Nov 05 12:05:05 2018
+# Process ID: 6748
+# Current directory: D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6692 D:\BaiduYunDownload\MIZ7035_VIP\S08_VIP\S08_CH07_udp_ip_10g_sfp\S08_CH07_udp_ip_10g_sfp\udp_ip_10g_sfp.xpr
+# Log file: D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/vivado.log
+# Journal file: D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.xpr

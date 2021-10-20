@@ -1,0 +1,53 @@
+[Place 30-140] Unroutable Placement! A GTXE_COMMON / GTXE_CHANNEL clock component pair is not placed in a routable site pair. The GTXE_COMMON component can use the dedicated path between the GTXE_COMMON and the GTXE_CHANNEL if both are placed in the same clock region. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_gt_common_block/reset_pulse_reg[0]] >
+
+	ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_gt_common_block/gtxe2_common_0_i (GTXE2_COMMON.QPLLOUTCLK) is provisionally placed by clockplacer on GTXE2_COMMON_X0Y4
+	 ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i (GTXE2_CHANNEL.QPLLCLK) is locked to GTXE2_CHANNEL_X0Y25
+
+	The above error could possibly be related to other connected instances. Following is a list of 
+	all the related clock rules and their respective instances.
+
+	Clock Rule: rule_bufh_bufr_ramb
+	Status: PASS 
+	Rule Description: Reginal buffers in the same clock region must drive a total number of brams less
+	than the capacity of the region
+	 ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_efdb_xpcs_0_local_clock_reset_block/rxoutclk_bufh_i (BUFH.O) is provisionally placed by clockplacer on BUFHCE_X1Y72
+
+	Clock Rule: rule_bufh_gtx
+	Status: PASS 
+	Rule Description: A BUFH driving a GT must both be in the same clock region
+	 ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_efdb_xpcs_0_local_clock_reset_block/rxoutclk_bufh_i (BUFH.O) is provisionally placed by clockplacer on BUFHCE_X1Y72
+	 ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i (GTXE2_CHANNEL.RXUSRCLK) is locked to GTXE2_CHANNEL_X0Y25
+
+	Clock Rule: rule_clk_locked_loads
+	Status: PASS 
+	Rule Description NOT AVAILABLE
+	 ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_efdb_xpcs_0_local_clock_reset_block/rxoutclk_bufh_i (BUFH.O) is provisionally placed by clockplacer on BUFHCE_X1Y72
+	 ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i (GTXE2_CHANNEL.RXUSRCLK2) is locked to GTXE2_CHANNEL_X0Y25
+	 ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i (GTXE2_CHANNEL.RXUSRCLK) is locked to GTXE2_CHANNEL_X0Y25
+
+	Clock Rule: rule_gt_bufg
+	Status: PASS 
+	Rule Description: A GT driving a BUFG must be placed on the same half side (top/bottom) of the device
+	 ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i (GTXE2_CHANNEL.TXOUTCLK) is locked to GTXE2_CHANNEL_X0Y25
+	 ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/txoutclk_bufg_i (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y31
+
+	Clock Rule: rule_gt_bufhce
+	Status: PASS 
+	Rule Description: A GT driving a BUFH must both be in the same horizontal row (clockregion-wise)
+	 ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/gt0_gtwizard_10gbaser_multi_gt_i/gt0_gtwizard_10gbaser_i/gtxe2_i (GTXE2_CHANNEL.RXOUTCLK) is locked to GTXE2_CHANNEL_X0Y25
+	 ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_block_i/bd_efdb_xpcs_0_local_clock_reset_block/rxoutclk_bufh_i (BUFH.I) is provisionally placed by clockplacer on BUFHCE_X1Y72
+
+	Clock Rule: rule_bufds_bufg
+	Status: PASS 
+	Rule Description: A BUFDS driving a BUFG must be placed on the same half side (top/bottom) of the device
+	 ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/ibufds_inst (IBUFDS_GTE2.O) is locked to IBUFDS_GTE2_X0Y7
+	 ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/coreclk_bufg_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+
+	Clock Rule: rule_bufds_gtxcommon_intelligent_pin
+	Status: PASS 
+	Rule Description: A BUFDS driving a GTXCommon must both be placed in the same or adjacent clock region
+	(top/bottom)
+	 ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_shared_clock_reset_block/ibufds_inst (IBUFDS_GTE2.O) is locked to IBUFDS_GTE2_X0Y7
+	 and ethernet_core_0_B/inst/xpcs/inst/ten_gig_eth_pcs_pma_gt_common_block/gtxe2_common_0_i (GTXE2_COMMON.GTREFCLK0) is provisionally placed by clockplacer on GTXE2_COMMON_X0Y4
+

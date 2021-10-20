@@ -1,0 +1,963 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+Process ID: 4256
+
+Current time: 	10/29/18 9:05:07 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1440x900
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	E:/VIVADO2016/Vivado/2016.4/tps/win64/jre
+
+User name: 	lyc
+User home directory: C:/Users/lyc
+User working directory: D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI base root directory: E:/VIVADO2016/Vivado
+RDI data directory: E:/VIVADO2016/Vivado/2016.4/data
+RDI bin directory: E:/VIVADO2016/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/lyc/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/lyc/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	167 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 416 MB
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 49 MB (+49111kb) [00:00:13]
+// [Engine Memory]: 385 MB (+251763kb) [00:00:13]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\BaiduYunDownload\MIZ7035_VIP\S08_VIP\S08_CH07_udp_ip_10g_sfp\S08_CH07_udp_ip_10g_sfp\udp_ip_10g_sfp.xpr. Version: Vivado v2016.4 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// [Engine Memory]: 405 MB (+795kb) [00:00:16]
+// Tcl Message: open_project D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 450 MB. GUI used memory: 27 MB. Current time: 10/29/18 9:05:10 PM CST
+// [Engine Memory]: 453 MB (+29528kb) [00:00:20]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 52 MB (+157kb) [00:00:30]
+// [Engine Memory]: 550 MB (+78018kb) [00:00:30]
+// [GUI Memory]: 57 MB (+2225kb) [00:00:35]
+// Tcl Message: open_project D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp' INFO: [Project 1-313] Project file moved from 'D:/vivado_project/miz7035/udp_ip_10g_sfp' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/VIVADO2016/Vivado/2016.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 575 MB. GUI used memory: 37 MB. Current time: 10/29/18 9:05:28 PM CST
+// [Engine Memory]: 578 MB (+867kb) [00:00:37]
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 792.777 ; gain = 164.879 
+// Project name: udp_ip_10g_sfp; location: D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp; part: xc7z035ffg676-2
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// PAPropertyPanels.initPanels (udp_transmit_test.v) elapsed time: 0.3s
+// Elapsed time: 39 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, udp_transmit_test (udp_transmit_test.v)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, udp_transmit_test (udp_transmit_test.v), clk_wiz_0 - clk_wiz_0 (clk_wiz_0.xci)]", 2, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// [GUI Memory]: 61 MB (+1733kb) [00:01:18]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, udp_transmit_test (udp_transmit_test.v), clk_wiz_0 - clk_wiz_0 (clk_wiz_0.xci)]", 2, false); // y:i (D:JPanel, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 239, 214); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 200, 257); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 138, 81); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 65 MB (+1255kb) [00:01:50]
+// Elapsed time: 126 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 12); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, udp_ip_10g.xdc]", 14, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, udp_ip_10g.xdc]", 14, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("udp_ip_10g.xdc", 428, 243); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 71 MB (+2702kb) [00:03:51]
+// [GUI Memory]: 75 MB (+131kb) [00:08:40]
+// [GUI Memory]: 80 MB (+1628kb) [00:14:15]
+// Elapsed time: 1056 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, udp_transmit_test (udp_transmit_test.v)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, udp_transmit_test (udp_transmit_test.v)]", 1, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, udp_transmit_test (udp_transmit_test.v)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectCodeEditor("udp_transmit_test.v", 159, 88); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 213, 239); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 198, 210); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 84 MB (+102kb) [00:28:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 596 MB. GUI used memory: 40 MB. Current time: 10/29/18 9:34:30 PM CST
+// Elapsed time: 597 seconds
+selectCodeEditor("udp_transmit_test.v", 176, 85); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 176, 85, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("udp_transmit_test.v", 64, 237); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 64, 237, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("udp_transmit_test.v", 244, 123); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 182, 102); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 182, 102, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 67 seconds
+selectCodeEditor("udp_transmit_test.v", 206, 266); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 36 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, udp_transmit_test (udp_transmit_test.v)]", 1); // y:i (D:JPanel, cd:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // g:JideTabbedPane (L:aE, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 3, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 3, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 3, true); // y:i (D:JPanel, cd:JFrame) - Node
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// TclEventType: LOAD_FEATURE
+// HMemoryUtils.trashcanNow. Engine heap size: 618 MB. GUI used memory: 39 MB. Current time: 10/29/18 9:38:45 PM CST
+// [Engine Memory]: 711 MB (+108400kb) [00:33:57]
+// [Engine Memory]: 760 MB (+14815kb) [00:34:02]
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// Elapsed time: 16 seconds
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 788 MB. GUI used memory: 52 MB. Current time: 10/29/18 9:39:00 PM CST
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cP:g (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cP:g (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cP:g (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cP:g (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Clocking Options", 0); // cP:g (C:JPanel, p:g)
+// [Engine Memory]: 800 MB (+1949kb) [00:34:32]
+// HMemoryUtils.trashcanNow. Engine heap size: 800 MB. GUI used memory: 54 MB. Current time: 10/29/18 9:39:25 PM CST
+// Elapsed time: 16 seconds
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 3); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_10g_ethernet_0]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_10g_ethernet_0]", 1, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_10g_ethernet_0]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_10g_ethernet_0]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+// Elapsed time: 20 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "MAC Options", 1); // aS:g (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "PCS/PMA Options", 2); // aS:g (C:JPanel, p:g)
+// [GUI Memory]: 90 MB (+1659kb) [00:35:14]
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IEEE1588 Options", 3); // aS:g (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Shared Logic", 4); // aS:g (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Ethernet Standard", 0); // aS:g (C:JPanel, p:g)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 4, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 4, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 4, true); // y:i (D:JPanel, cd:JFrame) - Node
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Native Ports", 1); // aS:g (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Status Flags", 2); // aS:g (C:JPanel, p:g)
+// [GUI Memory]: 95 MB (+153kb) [00:35:55]
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Data Counts", 3); // aS:g (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // aS:g (C:JPanel, p:g)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 4); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_10g_ethernet_0]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_10g_ethernet_0]", 1, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// p:g (cd:JFrame): Re-customize IP: addNotify
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_10g_ethernet_0]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 831 MB. GUI used memory: 66 MB. Current time: 10/29/18 9:41:00 PM CST
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "MAC Options", 1); // aS:g (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "PCS/PMA Options", 2); // aS:g (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IEEE1588 Options", 3); // aS:g (C:JPanel, p:g)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Shared Logic", 4); // aS:g (C:JPanel, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_10g_ethernet_0]", 1); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axis_data_fifo_0]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axis_data_fifo_0]", 2, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axis_data_fifo_0]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+// p:g (cd:JFrame): Re-customize IP: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axis_data_fifo_0]", 2); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 3, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 3, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// L:bt (cd:JFrame):  Re-customize IP : addNotify
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// [Engine Memory]: 849 MB (+8737kb) [00:36:30]
+// HMemoryUtils.trashcanNow. Engine heap size: 858 MB. GUI used memory: 76 MB. Current time: 10/29/18 9:41:21 PM CST
+dismissDialog("Re-customize IP"); // L:bt (cd:JFrame)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 1); // cP:g (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port Renaming", 2); // cP:g (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "MMCM Settings", 3); // cP:g (C:JPanel, p:g)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Summary", 4); // cP:g (C:JPanel, p:g)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, p:g)
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 8, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 8, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// p:g (cd:JFrame): Re-customize IP: addNotify
+// [GUI Memory]: 108 MB (+8985kb) [00:37:03]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 8, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 8, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 8, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 8, true); // y:i (D:JPanel, cd:JFrame) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 888 MB. GUI used memory: 88 MB. Current time: 10/29/18 9:41:55 PM CST
+// [Engine Memory]: 892 MB (+794kb) [00:37:05]
+dismissDialog("Re-customize IP"); // p:g (cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 385, 160); // bF:I (JPanel:JComponent, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP]", 0); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP]", 0); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 3); // y:i (D:JPanel, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 277, 196); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g:JideTabbedPane (L:aE, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, udp_ip_10g.xdc]", 14, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, udp_ip_10g.xdc]", 14, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, udp_ip_10g.xdc]", 14, false); // y:i (D:JPanel, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 266, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("udp_ip_10g.xdc", 441, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // g:JideTabbedPane (L:aE, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_10g_ethernet_0]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_10g_ethernet_0]", 1, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 5684 ; 6438 ; 4 ; 0 ; 0.0 ; Tue Dec 05 20:36:38 CST 2017 ; 00:02:36 ; Vivado Synthesis Defaults (Vivado Synthesis 2016) ; xc7z035ffg676-2 ; Vivado Synthesis Defaults", 0, "synth_design Complete!", 2, true); // T:ab (JViewport:JComponent, cd:JFrame) - Node
+// PAPropertyPanels.initPanels (synth_1) elapsed time: 0.9s
+// [GUI Memory]: 116 MB (+2460kb) [00:38:16]
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g:JideTabbedPane (L:aE, cd:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // g:JideTabbedPane (L:aE, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 4, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 3, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axis_data_fifo_0]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axis_data_fifo_0]", 2, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// [GUI Memory]: 125 MB (+3235kb) [00:38:33]
+selectButton(PAResourceCommand.PACommandNames_GENERAL_SETTINGS, "xc7z035ffg676-2"); // h:k (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_GENERAL_SETTINGS
+// Project Settings: addNotify
+selectButton(PAResourceOtoP.ProjectSettingsGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // q:a (a:s, i:aA)
+// c:c (i:aA): Select Device: addNotify
+selectComboBox(PAResourceOtoP.PartChooser_TEMP_CHOOSER, "I", 4); // aE:V (JPanel:JComponent, c:c)
+selectComboBox(PAResourceOtoP.PartChooser_TEMP_CHOOSER, "I", 4); // aE:V (JPanel:JComponent, c:c)
+selectComboBox(PAResourceOtoP.PartChooser_PART_PACKAGE_CHOOSER, "ffg901", 23); // au:V (JPanel:JComponent, c:c)
+selectTable(PAResourceOtoP.PartChooser_PARTS, "xc7k420tiffg901-2L ; 901 ; 835 ; 1680 ; 521200 ; 0 ; 28 ; 380 ; 260600 ; 8 ; 1 ; 100 ; -40 ; 100 ; I ; 0.97 ; 0.93 ; 0.93 ; 28 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0", 1, "xc7k420tiffg901-2L", 0); // ah:r (JViewport:JComponent, c:c)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, c:c)
+dismissDialog("Select Device"); // c:c (i:aA)
+selectButton("OK", "OK"); // JButton:AbstractButton (ButtonPanel:JPanel, i:aA)
+// y:aO (cd:JFrame): Create New Run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// b:q (cd:JFrame): Create Run: addNotify
+dismissDialog("Create New Run"); // y:aO (cd:JFrame)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, b:q)
+dismissDialog("Create Run"); // b:q (cd:JFrame)
+selectButton("OK", "OK"); // JButton:AbstractButton (ButtonPanel:JPanel, i:aA)
+// y:aO (cd:JFrame): Create New Run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// b:q (cd:JFrame): Create Run: addNotify
+dismissDialog("Create New Run"); // y:aO (cd:JFrame)
+// Elapsed time: 10 seconds
+setText(PAResourceAtoD.CopyRunDialog_RUN_NAME, "synth_2_420"); // ak:JTextField (JPanel:JComponent, b:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, b:q)
+// TclEventType: RUN_ADD
+// Tcl Command: 'set_property INCLUDE_IN_ARCHIVE [ get_property INCLUDE_IN_ARCHIVE [get_runs synth_1]] [get_runs synth_2_420]'
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: RUN_MODIFY
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PART_MODIFIED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: create_run synth_2_420 -flow {Vivado Synthesis 2016} -strategy {Vivado Synthesis Defaults} 
+// Tcl Message: Run is defaulting to srcset: sources_1 Run is defaulting to constrset: constrs_1 Run is defaulting to part: xc7z035ffg676-2 
+// Tcl Message: current_run [get_runs synth_2_420] 
+// Tcl Message: set_property part xc7k420tiffg901-2L [current_project] 
+// TclEventType: DG_UPDATE_GRAPH
+dismissDialog("Create Run"); // b:q (cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dismissDialog("Project Settings"); // i:aA (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_10g_ethernet_0]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_10g_ethernet_0]", 1, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_UPGRADE_IP, "Upgrade IP..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// ad:y (cd:JFrame): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ad:y)
+dismissDialog("Enable Core Container"); // ad:y (cd:JFrame)
+// bt:g (cd:JFrame):  Upgrade IP : addNotify
+// Tcl Message: upgrade_ip -vlnv xilinx.com:ip:axi_10g_ethernet:3.1 [get_ips  axi_10g_ethernet_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'axi_10g_ethernet_0' 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 905 MB. GUI used memory: 93 MB. Current time: 10/29/18 9:44:45 PM CST
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: </xmac/s_axi/Reg> is being mapped into </s_axi> at <0x44A00000 [ 64K ]> 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated axi_10g_ethernet_0 to use current project options INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axi_10g_ethernet_0'... 
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/ip_upgrade.log'. 
+// Tcl Message: upgrade_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1030.324 ; gain = 0.000 
+// Tcl Message: export_ip_user_files -of_objects [get_ips axi_10g_ethernet_0] -no_script -sync -force -quiet 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// at:q (cd:JFrame): Generate Output Products: addNotify
+// Elapsed time: 10 seconds
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, at:q)
+// bt:g (cd:JFrame):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/axi_10g_ethernet_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axi_10g_ethernet_0'... 
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axi_10g_ethernet_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'axi_10g_ethernet_0'... 
+// [Engine Memory]: 951 MB (+14724kb) [00:40:03]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 972 MB. GUI used memory: 92 MB. Current time: 10/29/18 9:45:10 PM CST
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file d:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/hw_handoff/axi_10g_ethernet_0.hwh Generated Block Design Tcl file d:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/hw_handoff/axi_10g_ethernet_0_bd.tcl Generated Hardware Definition File d:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/hdl/axi_10g_ethernet_0.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1080.508 ; gain = 42.180 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/axi_10g_ethernet_0.xci] -no_script -sync -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 93 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 3, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 3, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_UPGRADE_IP, "Upgrade IP..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// ad:y (cd:JFrame): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ad:y)
+dismissDialog("Enable Core Container"); // ad:y (cd:JFrame)
+// Tcl Message: upgrade_ip -vlnv xilinx.com:ip:clk_wiz:5.3 [get_ips  clk_wiz_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'clk_wiz_0' 
+// bt:g (cd:JFrame):  Upgrade IP : addNotify
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,038 MB. GUI used memory: 93 MB. Current time: 10/29/18 9:46:30 PM CST
+// [Engine Memory]: 1,067 MB (+72445kb) [00:41:40]
+// [Engine Memory]: 1,122 MB (+1236kb) [00:41:45]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated clk_wiz_0 to use current project options INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/ip_upgrade.log'. 
+// Tcl Message: upgrade_ip: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1231.367 ; gain = 138.984 
+// Tcl Message: export_ip_user_files -of_objects [get_ips clk_wiz_0] -no_script -sync -force -quiet 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 132 MB (+601kb) [00:42:06]
+// at:q (cd:JFrame): Generate Output Products: addNotify
+// Elapsed time: 56 seconds
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, at:q)
+// bt:g (cd:JFrame):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'... 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 4, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 4, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 3, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 3, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axis_data_fifo_0]", 2, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_10g_ethernet_0]", 1, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axis_data_fifo_0]", 2, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_UPGRADE_IP, "Upgrade IP..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// ad:y (cd:JFrame): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ad:y)
+dismissDialog("Enable Core Container"); // ad:y (cd:JFrame)
+// Tcl Message: upgrade_ip -vlnv xilinx.com:ip:axis_data_fifo:1.1 [get_ips  axis_data_fifo_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'axis_data_fifo_0' 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// bt:g (cd:JFrame):  Upgrade IP : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated axis_data_fifo_0 to use current project options INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axis_data_fifo_0'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips axis_data_fifo_0] -no_script -sync -force -quiet 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// at:q (cd:JFrame): Generate Output Products: addNotify
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, at:q)
+// bt:g (cd:JFrame):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axis_data_fifo_0'... 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axis_data_fifo_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'axis_data_fifo_0'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0.xci] -no_script -sync -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// [GUI Memory]: 140 MB (+1761kb) [00:43:06]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 4, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 4, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_UPGRADE_IP, "Upgrade IP..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// ad:y (cd:JFrame): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ad:y)
+dismissDialog("Enable Core Container"); // ad:y (cd:JFrame)
+// Tcl Message: upgrade_ip -vlnv xilinx.com:ip:fifo_generator:13.1 [get_ips  udp_packet_fifo] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'udp_packet_fifo' 
+// bt:g (cd:JFrame):  Upgrade IP : addNotify
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated udp_packet_fifo to use current project options INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'udp_packet_fifo'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips udp_packet_fifo] -no_script -sync -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,140 MB. GUI used memory: 97 MB. Current time: 10/29/18 9:49:00 PM CST
+// at:q (cd:JFrame): Generate Output Products: addNotify
+// Elapsed time: 151 seconds
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a:JButton (JPanel:JComponent, at:q)
+// bt:g (cd:JFrame):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.srcs/sources_1/ip/udp_packet_fifo/udp_packet_fifo.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'udp_packet_fifo'... 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'udp_packet_fifo'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'udp_packet_fifo'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.srcs/sources_1/ip/udp_packet_fifo/udp_packet_fifo.xci] -no_script -sync -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, udp_packet_fifo]", 4, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, clk_wiz_0]", 3, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axis_data_fifo_0]", 2, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_10g_ethernet_0]", 1, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Implementation Out-of-date ; 0.24985435605049133 ; 0.0 ; 0.05429590120911598 ; 0.0 ; 0.0 ; 0.8892415165901184 ; 0 ; 7669 ; 9106 ; 6 ; 0 ; 0.0 ; Tue Dec 05 20:39:22 CST 2017 ; 00:03:22 ; Vivado Implementation Defaults* (Vivado Implementation 2016) ; xc7z035ffg676-2 ; Default settings for Implementation.", 1, "7", 17, false); // T:ab (JViewport:JComponent, cd:JFrame)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.3s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Implementation Out-of-date ; 0.24985435605049133 ; 0.0 ; 0.05429590120911598 ; 0.0 ; 0.0 ; 0.8892415165901184 ; 0 ; 7669 ; 9106 ; 6 ; 0 ; 0.0 ; Tue Dec 05 20:39:22 CST 2017 ; 00:03:22 ; Vivado Implementation Defaults* (Vivado Implementation 2016) ; xc7z035ffg676-2 ; Default settings for Implementation.", 1, "7", 17, false, false, false, false, true, false); // T:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// e:g (cd:JFrame): Delete Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "Delete"); // a:JButton (JPanel:JComponent, e:g)
+// e:g (cd:JFrame): Delete Runs: addNotify
+// bt:g (e:g):  Deleting Runs : addNotify
+// TclEventType: RUN_DELETE
+// Tcl Message: delete_runs "impl_1" 
+dismissDialog("Deleting Runs"); // bt:g (e:g)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ; 5684 ; 6438 ; 4 ; 0 ; 0.0 ; Tue Dec 05 20:36:38 CST 2017 ; 00:02:36 ; Vivado Synthesis Defaults (Vivado Synthesis 2016) ; xc7z035ffg676-2 ; Vivado Synthesis Defaults", 0, "7", 17, false); // T:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ; 5684 ; 6438 ; 4 ; 0 ; 0.0 ; Tue Dec 05 20:36:38 CST 2017 ; 00:02:36 ; Vivado Synthesis Defaults (Vivado Synthesis 2016) ; xc7z035ffg676-2 ; Vivado Synthesis Defaults", 0, "7", 17, false, false, false, false, true, false); // T:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Delete"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// e:g (cd:JFrame): Delete Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "Delete"); // a:JButton (JPanel:JComponent, e:g)
+// e:g (cd:JFrame): Delete Runs: addNotify
+// bt:g (e:g):  Deleting Runs : addNotify
+// TclEventType: RUN_DELETE
+// Tcl Message: delete_runs "synth_1" 
+dismissDialog("Deleting Runs"); // bt:g (e:g)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g:JideTabbedPane (L:aE, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, udp_ip_10g.xdc]", 14, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, udp_ip_10g.xdc]", 14, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, udp_ip_10g.xdc]", 14, false); // y:i (D:JPanel, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 196, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 31 seconds
+selectCodeEditor("udp_ip_10g.xdc", 173, 187); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 180, 219); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 177, 265); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 175, 290); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 192, 298); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 212, 167); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 201, 51); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 28, 66); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 307, 10); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 307, 122); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 290, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("udp_ip_10g.xdc", 203, 225); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 418 seconds
+selectCodeEditor("udp_ip_10g.xdc", 195, 193); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 83 seconds
+selectCodeEditor("udp_ip_10g.xdc", 253, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 49 seconds
+selectCodeEditor("udp_ip_10g.xdc", 173, 26); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 214, 56); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 175, 125); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("udp_ip_10g.xdc", 202, 139); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 199, 176); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 168, 43); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 193, 139); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 190, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 173, 264); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 173, 283); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("udp_ip_10g.xdc", 200, 244); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 177, 222); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("udp_ip_10g.xdc", 275, 101); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, udp_transmit_test (udp_transmit_test.v)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, udp_transmit_test (udp_transmit_test.v)]", 1, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectCodeEditor("udp_transmit_test.v", 151, 169); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 213, 275); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 299, 253); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "udp_transmit_test.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 46, 257); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "udp_transmit_test.v", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 59, 273); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "udp_transmit_test.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 138, 271); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 59, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 19 seconds
+selectCodeEditor("udp_transmit_test.v", 13, 205); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "udp_transmit_test.v", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 125, 196); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 153, 199); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 152, 199); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 166, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("udp_transmit_test.v", 210, 259); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 210, 259, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("udp_transmit_test.v", 259, 211); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 217, 258); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 217, 258, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("udp_transmit_test.v", 190, 294); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 98, 354); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 96, 353, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("udp_transmit_test.v", 247, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 188, 45); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 188, 45, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("udp_transmit_test.v", 181, 315); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 64, 187); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_transmit_test.v", 64, 187, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, udp_ip_10g.xdc]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, udp_ip_10g.xdc]", 4, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("udp_ip_10g.xdc", 389, 288); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "udp_ip_10g.xdc", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 86, 328); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 402, 300); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 333, 332); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("udp_ip_10g.xdc", 293, 349); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 357, 352); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 366, 347); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 321, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 265, 335); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 363, 340); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 211 seconds
+selectCodeEditor("udp_ip_10g.xdc", 113, 225); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 163, 42); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 304, 9); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 64, 82); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 86, 201); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("udp_ip_10g.xdc", 188, 239); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 272, 214); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+// Elapsed time: 70 seconds
+selectCodeEditor("udp_ip_10g.xdc", 147, 297); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 183, 263); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 179, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 215, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("udp_ip_10g.xdc", 176, 257); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("udp_ip_10g.xdc", 175, 280); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 175, 300); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 174, 315); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 183, 326); // bF:I (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+selectCodeEditor("udp_ip_10g.xdc", 268, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (g:CommandBar, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// Tcl Message: launch_runs synth_2_420 -jobs 2 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Oct 29 22:13:55 2018] Launched synth_2_420... Run output will be captured here: D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.runs/synth_2_420/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// WARNING: HTimer (a:a Update Status Timer) is taking too long to process. Increasing delay to 3000 ms.
+// [GUI Memory]: 148 MB (+721kb) [01:10:05]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,167 MB. GUI used memory: 99 MB. Current time: 10/29/18 10:16:00 PM CST
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:y (cd:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 652 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// bt:g (cd:JFrame):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_2 -jobs 2 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Oct 29 22:24:49 2018] Launched impl_2... Run output will be captured here: D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.runs/impl_2/runme.log 
+dismissDialog("Starting Design Runs"); // bt:g (cd:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Implementation Completed: addNotify
+// Elapsed time: 418 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bt:g (cd:JFrame):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_2 
+// [Engine Memory]: 1,222 MB (+46696kb) [01:27:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,235 MB. GUI used memory: 99 MB. Current time: 10/29/18 10:31:55 PM CST
+// [Engine Memory]: 1,329 MB (+48112kb) [01:27:08]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 1,379 MB. GUI used memory: 98 MB. Current time: 10/29/18 10:32:10 PM CST
+// [Engine Memory]: 1,409 MB (+13865kb) [01:27:28]
+// [Engine Memory]: 1,541 MB (+63916kb) [01:27:38]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,541 MB. GUI used memory: 98 MB. Current time: 10/29/18 10:32:30 PM CST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,541 MB. GUI used memory: 98 MB. Current time: 10/29/18 10:32:50 PM CST
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: E:/VIVADO2016/Vivado/2016.4/data/./parts/xilinx/kintex7/devint/kintex7/xc7k420t/xc7k420t.xgd; ZipEntry: xc7k420t_floorplan.xgd elapsed time: 2.5s
+// Xgd.load filename: E:/VIVADO2016/Vivado/2016.4/data/./parts/xilinx/kintex7/devint/kintex7/xc7k420t/xc7k420t.xgd; ZipEntry: xc7k420t_detail.xgd elapsed time: 2.5s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 20.9s
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 379 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2016.4 INFO: [Device 21-403] Loading part xc7k420tiffg901-2L INFO: [Project 1-570] Preparing netlist for logic optimization 
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Parsing XDC File [D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/.Xil/Vivado-4256-lyc-PC/dcp/udp_transmit_test_early.xdc] 
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. [D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57] INFO: [Timing 38-2] Deriving generated clocks [D:/BaiduYunDownload/MIZ7035_VIP/S08_VIP/S08_CH07_udp_ip_10g_sfp/S08_CH07_udp_ip_10g_sfp/udp_ip_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57] 
+// Tcl Message: get_clocks: Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1978.605 ; gain = 541.277 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1989.781 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1989.781 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 39 instances were transformed.   RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 37 instances   RAM64X1S => RAM64X1S (RAMS64E): 2 instances  
+// Tcl Message: open_run: Time (s): cpu = 00:01:10 ; elapsed = 00:01:38 . Memory (MB): peak = 2073.469 ; gain = 795.563 
+// ExpRunCommands.openImplResults elapsed time: 102s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 167 MB (+12532kb) [01:28:56]
+// [GUI Memory]: 177 MB (+1470kb) [01:28:57]
+// [GUI Memory]: 186 MB (+166kb) [01:28:57]
+// [GUI Memory]: 196 MB (+203kb) [01:28:59]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// OpenDesignTask elapsed time: 127.7s
+// 'dH' command handler elapsed time: 128 seconds
+// [GUI Memory]: 206 MB (+719kb) [01:29:06]
+// Elapsed time: 129 seconds
+dismissDialog("Open Implemented Design"); // bt:g (cd:JFrame)
+// Elapsed time: 45 seconds
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 2, 418, 720, 439); // v:aE (k:TdiGroup, cd:JFrame)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4, "Scalar ports (8)", 0, true); // E:ab (JViewport:JComponent, cd:JFrame) - Node
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4); // E:ab (JViewport:JComponent, cd:JFrame)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "M_AXIS_54251 (1) ; OUT ;  ;  ; true ; 18 ; LVCMOS25 ; 2.5 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1); // E:ab (JViewport:JComponent, cd:JFrame)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (1) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 2); // E:ab (JViewport:JComponent, cd:JFrame)
+// [GUI Memory]: 217 MB (+1089kb) [01:30:20]
+// Elapsed time: 21 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 6, "Scalar ports (8)", 0, true); // E:ab (JViewport:JComponent, cd:JFrame) - Node
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (8) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 6); // E:ab (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 18 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (1) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 2, "Scalar ports (1)", 0, true); // E:ab (JViewport:JComponent, cd:JFrame) - Node
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOORPLANNING, "Floorplanning"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_IO_PLANNING, "I/O Planning"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // Y:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_CONFIG_BITSTREAM, "Edit Device Properties..."); // ab:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // T:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CONFIG_BITSTREAM
+// a:q (cd:JFrame): Edit Device Properties: addNotify
+selectComboBox("Enable Bitstream Compression", "TRUE", 1); // e:JComboBox (JPanel:JComponent, a:q)
+// Tcl Message: startgroup 
+// Tcl Message: set_property BITSTREAM.GENERAL.COMPRESS TRUE [get_designs impl_2] 
+selectList(PAResourceAtoD.ConfigureBitstreamDialog_TOC_LIST, "Configuration", 1); // t:a (JViewport:JComponent, a:q)
+selectComboBox("Tristate CCLK pin during reconfiguration", "TRUE", 1); // e:JComboBox (JPanel:JComponent, a:q)
+// Tcl Message: set_property BITSTREAM.CONFIG.CCLK_TRISTATE TRUE [get_designs impl_2] 
+selectComboBox("Configuration Voltage", "2.5", 2); // e:JComboBox (JPanel:JComponent, a:q)
+// Tcl Message: set_property CONFIG_VOLTAGE 2.5 [get_designs impl_2] 
+selectComboBox("Configuration Bank Voltage Selection", "VCCO", 1); // e:JComboBox (JPanel:JComponent, a:q)
+// Tcl Message: set_property CFGBVS VCCO [get_designs impl_2] 
+selectComboBox("Configuration Rate (MHz)", "66", 10); // e:JComboBox (JPanel:JComponent, a:q)
+// Tcl Message: set_property BITSTREAM.CONFIG.CONFIGRATE 66 [get_designs impl_2] 
+selectComboBox("Enable SPI 32-bit address style", "YES", 1); // e:JComboBox (JPanel:JComponent, a:q)
+// Tcl Message: set_property BITSTREAM.CONFIG.SPI_32BIT_ADDR YES [get_designs impl_2] 
+selectComboBox("Bus width", "4", 3); // e:JComboBox (JPanel:JComponent, a:q)
+// Tcl Message: set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 4 [get_designs impl_2] 
+selectComboBox("Enable the FPGA to use a falling edge clock for SPI data capture", "YES", 1); // e:JComboBox (JPanel:JComponent, a:q)
+// Tcl Message: set_property BITSTREAM.CONFIG.SPI_FALL_EDGE YES [get_designs impl_2] 
+selectComboBox("Unused IOB Pins", "PULLUP", 1); // e:JComboBox (JPanel:JComponent, a:q)
+// Tcl Message: set_property BITSTREAM.CONFIG.UNUSEDPIN PULLUP [get_designs impl_2] 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:q)
+// 'G' command handler elapsed time: 24 seconds
+// Tcl Message: endgroup 
+dismissDialog("Edit Device Properties"); // a:q (cd:JFrame)

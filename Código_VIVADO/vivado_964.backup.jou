@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sat Dec 15 10:55:01 2018
+# Process ID: 964
+# Current directory: G:/HPC420/HPC_K420_UDP/udp_ip_10g_sfp_X1_SFP_B
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6632 G:\HPC420\HPC_K420_UDP\udp_ip_10g_sfp_X1_SFP_B\udp_ip_10g_sfp.xpr
+# Log file: G:/HPC420/HPC_K420_UDP/udp_ip_10g_sfp_X1_SFP_B/vivado.log
+# Journal file: G:/HPC420/HPC_K420_UDP/udp_ip_10g_sfp_X1_SFP_B\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/HPC420/HPC_K420_UDP/udp_ip_10g_sfp_X1_SFP_B/udp_ip_10g_sfp.xpr

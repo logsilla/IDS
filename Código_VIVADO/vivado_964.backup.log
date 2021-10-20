@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Sat Dec 15 10:55:01 2018
+# Process ID: 964
+# Current directory: G:/HPC420/HPC_K420_UDP/udp_ip_10g_sfp_X1_SFP_B
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6632 G:\HPC420\HPC_K420_UDP\udp_ip_10g_sfp_X1_SFP_B\udp_ip_10g_sfp.xpr
+# Log file: G:/HPC420/HPC_K420_UDP/udp_ip_10g_sfp_X1_SFP_B/vivado.log
+# Journal file: G:/HPC420/HPC_K420_UDP/udp_ip_10g_sfp_X1_SFP_B\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/HPC420/HPC_K420_UDP/udp_ip_10g_sfp_X1_SFP_B/udp_ip_10g_sfp.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2016/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 973.215 ; gain = 228.637
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 15 10:57:20 2018...
