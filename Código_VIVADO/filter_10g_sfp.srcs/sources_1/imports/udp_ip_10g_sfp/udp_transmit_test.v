@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ps 
 
 module sfp_10G
 (
@@ -205,12 +205,12 @@ clk_wiz_1 clk_wiz_1
     .clk_in1(clk));    // input clk_in1	
 
 //----------------------------------------------------------------------------
-// EstatÌsticas da interface de 10G
+// Estat√≠sticas da interface de 10G
 //----------------------------------------------------------------------------
 // TX Statistic
-// tx_statistics_vector[0] -> Testar se o frame est· sendo transmitido corretamente
-// tx_statistics_vector[1] -> Testar se o frame transmitido È broadcast
-// tx_statistics_vector[3] -> Testar se a transmiss„o do frame anterior foi encerrada devido erro de execuÁ„o (underrun) 
+// tx_statistics_vector[0] -> Testar se o frame est√° sendo transmitido corretamente
+// tx_statistics_vector[1] -> Testar se o frame transmitido √© broadcast
+// tx_statistics_vector[3] -> Testar se a transmiss√£o do frame anterior foi encerrada devido erro de execu√ß√£o (underrun) 
 /*
    wire [25:0] tx_statistics_vector;
    wire tx_statistics_valid;
@@ -240,9 +240,9 @@ clk_wiz_1 clk_wiz_1
 */
 	
 // RX Statistic
-// rx_statistics_vector[0] -> Testar se o frame est· sendo recebido corretamente
-// rx_statistics_vector[1] -> Testar se o frame recebido È broadcast
-// rx_statistics_vector[3] -> Testar se a recepÁ‚o do frame anterior foi encerrada devido erro de execuÁ„o (underrun) 
+// rx_statistics_vector[0] -> Testar se o frame est√° sendo recebido corretamente
+// rx_statistics_vector[1] -> Testar se o frame recebido √© broadcast
+// rx_statistics_vector[3] -> Testar se a recep√ß√¢o do frame anterior foi encerrada devido erro de execu√ß√£o (underrun) 
 /*
    wire [29:0] rx_statistics_vector;
    wire rx_statistics_valid;
@@ -309,7 +309,7 @@ assign led[11] = valid_check; //s_axis_tx_tready_A
 assign led[12] = last_check;
 */
 
-// MÛdulo de rede que carrega os pacotes da interface A para a interface B
+// M√≥dulo de rede que carrega os pacotes da interface A para a interface B
 mkNetwork mkNetwork_A (
  .CLK(coreclk_A),              //                    I     1 clock
  .RST_N   (~core_reset_A),     //                    I     1 reset
@@ -341,7 +341,7 @@ mkNetwork mkNetwork_A (
 // .last_check(last_check) //                                O     1 reg
 );
 
-// MÛdulo de rede que carrega os pacotes da interface B para a interface A
+// M√≥dulo de rede que carrega os pacotes da interface B para a interface A
 mkNetwork mkNetwork_B (
  .CLK(coreclk_B),              //                    I     1 clock
  .RST_N   (~core_reset_B),     //                    I     1 reset
