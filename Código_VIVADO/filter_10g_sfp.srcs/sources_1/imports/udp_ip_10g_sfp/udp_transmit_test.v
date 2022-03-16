@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps 
+`timescale 1ns / 1ps
 
 module sfp_10G
 (
@@ -13,7 +13,7 @@ module sfp_10G
 		input          		sfp_rx_n_A,		
 		output wire        	sfp_tx_p_A,
 		output wire         sfp_tx_n_A,		
-		output wire         sfp_tx_disable_A,		
+		output wire         sfp_tx_disable_A,
 		output wire         sfp_rate_A,
 		
         // Interface B
@@ -26,6 +26,7 @@ module sfp_10G
 		output wire         sfp_tx_n_B,		
 		output wire         sfp_tx_disable_B,		
 		output wire         sfp_rate_B,		
+	
 		
 		output wire [2:0]  led_A,
 		output wire [2:0]  led_B
@@ -34,13 +35,12 @@ module sfp_10G
 		//output wire [12:0]  led
     );
 
-wire            clk_A;
-wire            clk_B;
+wire            clk;
 
 
-//wire        	mmcm_locked;
-wire        	mmcm_locked_A;
-wire        	mmcm_locked_B;
+wire        	mmcm_locked;
+//wire        	mmcm_locked_A;
+//wire        	mmcm_locked_B;
 
 // Interface A - RX e TX
 wire        	mac_tx_valid_A;
@@ -138,25 +138,25 @@ assign   sfp_rate_A = 1'b1;
 assign    led_A[0] =  pcspma_status_A[0];
 assign    led_A[1] =  block_lock_A;
 //assign    led[2] =  1'b1; //udp_error_flag;
-//assign    led =  mmcm_locked;
-assign    led_A[2] =  mmcm_locked_A;
+assign    led_A[2] =  mmcm_locked;
+//assign    led_A[2] =  mmcm_locked_A;
 
 assign   sfp_rate_B = 1'b1;
 assign    led_B[0] =  pcspma_status_B[0];
 assign    led_B[1] =  block_lock_B;
 //assign    led[6] =  1'b1; //udp_error_flag;
-assign    led_B[2] =  mmcm_locked_B;
+//assign    led_B[2] =  mmcm_locked_B;
 
 assign    reset  = ~key1;
-//assign    areset_n_A  = ~reset & mmcm_locked & pcspma_status_A[0];
-//assign    areset_n_B  = ~reset & mmcm_locked & pcspma_status_B[0];
+assign    areset_n_A  = ~reset & mmcm_locked & pcspma_status_A[0];
+assign    areset_n_B  = ~reset & mmcm_locked & pcspma_status_B[0];
 
-assign    areset_n_A  = ~reset & mmcm_locked_A & pcspma_status_A[0];
-assign    areset_n_B  = ~reset & mmcm_locked_B & pcspma_status_B[0];
+//assign    areset_n_A  = ~reset & mmcm_locked_A & pcspma_status_A[0];
+//assign    areset_n_B  = ~reset & mmcm_locked_B & pcspma_status_B[0];
 	
-//wire	clk_100;	
-wire	clk_100_A;	
-wire	clk_100_B;	
+wire	clk_100;	
+//wire	clk_100_A;	
+//wire	clk_100_B;	
 
 //----------------------------------------------------------------------------
 //  Output     Output      Phase    Duty Cycle   Pk-to-Pk     Phase
@@ -168,22 +168,22 @@ wire	clk_100_B;
 // Input Clock   Freq (MHz)    Input Jitter (UI)
 //----------------------------------------------------------------------------
 // __primary_________100.000____________0.010	
-/*
+
 clk_wiz_0 clk_wiz_0
    (
     // Clock out ports
-    .clk_out1(clk_100_A),     // output clk_out1
-    .clk_out2(clk_100_B),     // output clk_out2
+    .clk_out1(clk_100),     // output clk_out1
+    //.clk_out2(clk_100_B),     // output clk_out2
     // Status and control signals
     .reset(reset), // input reset
     .locked(mmcm_locked),       // output locked
    // Clock in ports
     .clk_in1(clk));    // input clk_in1	
-*/
+
 
 //assign clk_A = clk;
 //assign clk_B = clk;
-
+/*
 clk_wiz_0 clk_wiz_0
    (
     // Clock out ports
@@ -203,14 +203,14 @@ clk_wiz_1 clk_wiz_1
     .locked(mmcm_locked_B),       // output locked
    // Clock in ports
     .clk_in1(clk));    // input clk_in1	
-
+*/
 //----------------------------------------------------------------------------
-// EstatÃ­sticas da interface de 10G
+// Estatísticas da interface de 10G
 //----------------------------------------------------------------------------
 // TX Statistic
-// tx_statistics_vector[0] -> Testar se o frame estÃ¡ sendo transmitido corretamente
-// tx_statistics_vector[1] -> Testar se o frame transmitido Ã© broadcast
-// tx_statistics_vector[3] -> Testar se a transmissÃ£o do frame anterior foi encerrada devido erro de execuÃ§Ã£o (underrun) 
+// tx_statistics_vector[0] -> Testar se o frame está sendo transmitido corretamente
+// tx_statistics_vector[1] -> Testar se o frame transmitido é broadcast
+// tx_statistics_vector[3] -> Testar se a transmissão do frame anterior foi encerrada devido erro de execução (underrun) 
 /*
    wire [25:0] tx_statistics_vector;
    wire tx_statistics_valid;
@@ -240,9 +240,9 @@ clk_wiz_1 clk_wiz_1
 */
 	
 // RX Statistic
-// rx_statistics_vector[0] -> Testar se o frame estÃ¡ sendo recebido corretamente
-// rx_statistics_vector[1] -> Testar se o frame recebido Ã© broadcast
-// rx_statistics_vector[3] -> Testar se a recepÃ§Ã¢o do frame anterior foi encerrada devido erro de execuÃ§Ã£o (underrun) 
+// rx_statistics_vector[0] -> Testar se o frame está sendo recebido corretamente
+// rx_statistics_vector[1] -> Testar se o frame recebido é broadcast
+// rx_statistics_vector[3] -> Testar se a recepçâo do frame anterior foi encerrada devido erro de execução (underrun) 
 /*
    wire [29:0] rx_statistics_vector;
    wire rx_statistics_valid;
@@ -309,7 +309,7 @@ assign led[11] = valid_check; //s_axis_tx_tready_A
 assign led[12] = last_check;
 */
 
-// MÃ³dulo de rede que carrega os pacotes da interface A para a interface B
+// Módulo de rede que carrega os pacotes da interface A para a interface B
 mkNetwork mkNetwork_A (
  .CLK(coreclk_A),              //                    I     1 clock
  .RST_N   (~core_reset_A),     //                    I     1 reset
@@ -341,7 +341,7 @@ mkNetwork mkNetwork_A (
 // .last_check(last_check) //                                O     1 reg
 );
 
-// MÃ³dulo de rede que carrega os pacotes da interface B para a interface A
+// Módulo de rede que carrega os pacotes da interface B para a interface A
 mkNetwork mkNetwork_B (
  .CLK(coreclk_B),              //                    I     1 clock
  .RST_N   (~core_reset_B),     //                    I     1 reset
@@ -507,14 +507,14 @@ axis_data_fifo_0 rx_packet_fifo0_B
     // Add reset synchronizers to the asynchronous reset inputs
     //--------------------------------------------------------------------------
     axi_10g_ethernet_0_sync_reset s_axis_reset_gen_A (
-      .clk                             (clk_100_A),
+      .clk                             (clk_100),
       .reset_in                        (~areset_n_A),
       .reset_out                       (s_axi_reset_A)
       );
  
 
     axi_10g_ethernet_0_sync_reset s_axis_reset_gen_B (
-      .clk                             (clk_100_B),
+      .clk                             (clk_100),
       .reset_in                        (~areset_n_B),
       .reset_out                       (s_axi_reset_B)
       );
@@ -557,7 +557,7 @@ axis_data_fifo_0 rx_packet_fifo0_B
       .areset_datapathclk_out          (),
       .refclk_p                        (gtrefclk0_p_A),
       .refclk_n                        (gtrefclk0_n_A),
-      .dclk                            (clk_100_A),
+      .dclk                            (clk_100),
       .reset                           (reset),
       .resetdone_out                   (),
       .reset_counter_done_out          (),
@@ -593,7 +593,7 @@ axis_data_fifo_0 rx_packet_fifo0_B
       .m_axis_rx_tuser                 (m_axis_rx_tuser_A),
       .m_axis_rx_tlast                 (m_axis_rx_tlast_A),
 	  
-      .s_axi_aclk                      (clk_100_A),
+      .s_axi_aclk                      (clk_100),
       .s_axi_aresetn                   (areset_n_A),
       .s_axi_awaddr                    (s_axi_awaddr_A),
       .s_axi_awvalid                   (s_axi_awvalid_A),
@@ -633,7 +633,7 @@ axis_data_fifo_0 rx_packet_fifo0_B
       .areset_datapathclk_out          (),
       .refclk_p                        (gtrefclk0_p_B),
       .refclk_n                        (gtrefclk0_n_B),
-      .dclk                            (clk_100_B),
+      .dclk                            (clk_100),
       .reset                           (reset),
       .resetdone_out                   (),
       .reset_counter_done_out          (),
@@ -669,7 +669,7 @@ axis_data_fifo_0 rx_packet_fifo0_B
       .m_axis_rx_tuser                 (m_axis_rx_tuser_B),
       .m_axis_rx_tlast                 (m_axis_rx_tlast_B),
 	  
-      .s_axi_aclk                      (clk_100_B),
+      .s_axi_aclk                      (clk_100),
       .s_axi_aresetn                   (areset_n_B),
       .s_axi_awaddr                    (s_axi_awaddr_B),
       .s_axi_awvalid                   (s_axi_awvalid_B),
@@ -707,7 +707,7 @@ axis_data_fifo_0 rx_packet_fifo0_B
     //--------------------------------------------------------------------------
     // Interface A
     axi_10g_ethernet_0_axi_lite_sm axi_lite_controller0_A (
-      .s_axi_aclk                      (clk_100_A),
+      .s_axi_aclk                      (clk_100),
       .s_axi_reset                     (s_axi_reset_A),
 
       .pcs_loopback                    (1'b0),
@@ -741,7 +741,7 @@ axis_data_fifo_0 rx_packet_fifo0_B
 
     // Interface B
     axi_10g_ethernet_0_axi_lite_sm axi_lite_controller0_B (
-      .s_axi_aclk                      (clk_100_B),
+      .s_axi_aclk                      (clk_100),
       .s_axi_reset                     (s_axi_reset_B),
 
       .pcs_loopback                    (1'b0),

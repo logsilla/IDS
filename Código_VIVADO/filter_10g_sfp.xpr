@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="D:/GitHub/Filtro-FPGA/filter_10g_sfp.xpr">
+<Project Version="7" Minor="54" Path="D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="b957f8f78c0d462d813f6f4deadac321"/>

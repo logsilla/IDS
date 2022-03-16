@@ -2,12 +2,12 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Jul 19 12:30:04 2021
-# Process ID: 22368
-# Current directory: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420
+# Start of session at: Wed Mar 16 10:15:08 2022
+# Process ID: 10056
+# Current directory: D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.runs/synth_2_420
 # Command line: vivado.exe -log sfp_10G.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sfp_10G.tcl
-# Log file: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/sfp_10G.vds
-# Journal file: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420\vivado.jou
+# Log file: D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.runs/synth_2_420/sfp_10G.vds
+# Journal file: D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.runs/synth_2_420\vivado.jou
 #-----------------------------------------------------------
 source sfp_10G.tcl -notrace
 Command: synth_design -top sfp_10G -part xc7k420tiffg901-2L
@@ -19,13 +19,13 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k420
 INFO: [Device 21-403] Loading part xc7k420tiffg901-2L
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16152
+INFO: [Synth 8-7075] Helper process launched with PID 13684
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1295.879 ; gain = 134.461
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1296.152 ; gain = 134.281
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'sfp_10G' [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/udp_ip_10g_sfp/udp_transmit_test.v:3]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'sfp_10G' [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/udp_ip_10g_sfp/udp_transmit_test.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
 INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
@@ -78,51 +78,51 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2020.2/s
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (1#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (2#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (3#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (4#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.v:70]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1_clk_wiz' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_clk_wiz.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1_clk_wiz' (5#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_clk_wiz.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (6#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mkNetwork' [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkNetwork.v:40]
-INFO: [Synth 8-6157] synthesizing module 'mkEthernet' [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkEthernet.v:41]
-INFO: [Synth 8-6155] done synthesizing module 'mkEthernet' (7#1) [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkEthernet.v:41]
-INFO: [Synth 8-6157] synthesizing module 'mkFilter' [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkFilter.v:40]
-INFO: [Synth 8-6157] synthesizing module 'SizedFIFO' [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (3#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (4#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.v:70]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1_clk_wiz' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1_clk_wiz' (5#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (6#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mkNetwork' [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkNetwork.v:40]
+INFO: [Synth 8-6157] synthesizing module 'mkEthernet' [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkEthernet.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'mkEthernet' (7#1) [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkEthernet.v:41]
+INFO: [Synth 8-6157] synthesizing module 'mkFilter' [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkFilter.v:40]
+INFO: [Synth 8-6157] synthesizing module 'SizedFIFO' [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:35]
 	Parameter p1width bound to: 294 - type: integer 
 	Parameter p2depth bound to: 32 - type: integer 
 	Parameter p3cntr_width bound to: 5 - type: integer 
 	Parameter guarded bound to: 1'b1 
 	Parameter p2depth2 bound to: 30 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:120]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:177]
-INFO: [Synth 8-6155] done synthesizing module 'SizedFIFO' (8#1) [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:35]
-INFO: [Synth 8-6157] synthesizing module 'SizedFIFO__parameterized0' [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:35]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:120]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:177]
+INFO: [Synth 8-6155] done synthesizing module 'SizedFIFO' (8#1) [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:35]
+INFO: [Synth 8-6157] synthesizing module 'SizedFIFO__parameterized0' [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:35]
 	Parameter p1width bound to: 73 - type: integer 
 	Parameter p2depth bound to: 128 - type: integer 
 	Parameter p3cntr_width bound to: 7 - type: integer 
 	Parameter guarded bound to: 1'b1 
 	Parameter p2depth2 bound to: 126 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:120]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:177]
-INFO: [Synth 8-6155] done synthesizing module 'SizedFIFO__parameterized0' (8#1) [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:35]
-INFO: [Synth 8-6157] synthesizing module 'SizedFIFO__parameterized1' [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:35]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:120]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:177]
+INFO: [Synth 8-6155] done synthesizing module 'SizedFIFO__parameterized0' (8#1) [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:35]
+INFO: [Synth 8-6157] synthesizing module 'SizedFIFO__parameterized1' [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:35]
 	Parameter p1width bound to: 73 - type: integer 
 	Parameter p2depth bound to: 32 - type: integer 
 	Parameter p3cntr_width bound to: 5 - type: integer 
 	Parameter guarded bound to: 1'b1 
 	Parameter p2depth2 bound to: 30 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:120]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:177]
-INFO: [Synth 8-6155] done synthesizing module 'SizedFIFO__parameterized1' (8#1) [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:35]
-INFO: [Synth 8-6155] done synthesizing module 'mkFilter' (9#1) [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkFilter.v:40]
-INFO: [Synth 8-6157] synthesizing module 'mkIP' [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkIP.v:54]
-INFO: [Synth 8-6155] done synthesizing module 'mkIP' (10#1) [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkIP.v:54]
-INFO: [Synth 8-6157] synthesizing module 'mkTCP' [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkTCP.v:48]
-INFO: [Synth 8-6155] done synthesizing module 'mkTCP' (11#1) [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkTCP.v:48]
-INFO: [Synth 8-6155] done synthesizing module 'mkNetwork' (12#1) [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkNetwork.v:40]
-INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_0' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/synth/axis_data_fifo_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_4_top' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:120]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:177]
+INFO: [Synth 8-6155] done synthesizing module 'SizedFIFO__parameterized1' (8#1) [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'mkFilter' (9#1) [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkFilter.v:40]
+INFO: [Synth 8-6157] synthesizing module 'mkIP' [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkIP.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'mkIP' (10#1) [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkIP.v:54]
+INFO: [Synth 8-6157] synthesizing module 'mkTCP' [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkTCP.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'mkTCP' (11#1) [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkTCP.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'mkNetwork' (12#1) [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkNetwork.v:40]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_0' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/synth/axis_data_fifo_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_4_top' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 	Parameter C_AXIS_TDATA_WIDTH bound to: 64 - type: integer 
 	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
@@ -176,7 +176,7 @@ INFO: [Synth 8-6157] synthesizing module 'axis_data_fifo_v2_0_4_top' [d:/GitHub/
 	Parameter LP_WR_DATA_COUNT_WIDTH bound to: 11 - type: integer 
 	Parameter LP_S_ACLKEN_CAN_TOGGLE bound to: 0 - type: integer 
 	Parameter LP_M_ACLKEN_CAN_TOGGLE bound to: 0 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
 	Parameter C_TDATA_WIDTH bound to: 64 - type: integer 
 	Parameter C_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
@@ -204,7 +204,7 @@ INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_aclken
 	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
 	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
 	Parameter P_TPAYLOAD_WIDTH bound to: 84 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
 	Parameter C_TDATA_WIDTH bound to: 64 - type: integer 
 	Parameter C_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
@@ -237,8 +237,8 @@ INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2v
 	Parameter P_TID_INDX bound to: 81 - type: integer 
 	Parameter P_TDEST_INDX bound to: 82 - type: integer 
 	Parameter P_TUSER_INDX bound to: 83 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (13#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
-INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (13#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
 	Parameter C_TDATA_WIDTH bound to: 64 - type: integer 
 	Parameter C_TID_WIDTH bound to: 1 - type: integer 
 	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
@@ -271,8 +271,8 @@ INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector
 	Parameter P_TID_INDX bound to: 81 - type: integer 
 	Parameter P_TDEST_INDX bound to: 82 - type: integer 
 	Parameter P_TUSER_INDX bound to: 83 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (14#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
-INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' (15#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (14#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_aclken_converter_wrapper' (15#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_infrastructure_v1_1_vl_rfs.v:600]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_axis' [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2339]
 	Parameter CLOCKING_MODE bound to: common_clock - type: string 
 	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
@@ -485,42 +485,42 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [C:/
 INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (20#1) [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1854]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (21#1) [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_axis' (22#1) [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:2339]
-INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_v2_0_4_top' (23#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
-INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_0' (24#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/synth/axis_data_fifo_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0_sync_reset' [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_sync_reset.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet_0_sync_reset' (25#1) [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_sync_reset.v:62]
-INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0_sync_block' [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_sync_block.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_v2_0_4_top' (23#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/hdl/axis_data_fifo_v2_0_vl_rfs.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'axis_data_fifo_0' (24#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/synth/axis_data_fifo_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0_sync_reset' [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_sync_reset.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet_0_sync_reset' (25#1) [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_sync_reset.v:62]
+INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0_sync_block' [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_sync_block.v:64]
 	Parameter C_NUM_SYNC_REGS bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet_0_sync_block' (26#1) [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_sync_block.v:64]
-INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/synth/axi_10g_ethernet_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/hdl/bd_efdb.v:13]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_dcm_locked_driver_0' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_3/sim/bd_efdb_dcm_locked_driver_0.v:56]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/xlconstant.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet_0_sync_block' (26#1) [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_sync_block.v:64]
+INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/synth/axi_10g_ethernet_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/hdl/bd_efdb.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_dcm_locked_driver_0' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_3/sim/bd_efdb_dcm_locked_driver_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/xlconstant.v:23]
 	Parameter CONST_VAL bound to: 1'b1 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant' (27#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/xlconstant.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_dcm_locked_driver_0' (28#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_3/sim/bd_efdb_dcm_locked_driver_0.v:56]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_pma_pmd_type_driver_0' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_4/sim/bd_efdb_pma_pmd_type_driver_0.v:56]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant__parameterized0' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/xlconstant.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant' (27#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/xlconstant.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_dcm_locked_driver_0' (28#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_3/sim/bd_efdb_dcm_locked_driver_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_pma_pmd_type_driver_0' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_4/sim/bd_efdb_pma_pmd_type_driver_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant__parameterized0' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/xlconstant.v:23]
 	Parameter CONST_VAL bound to: 3'b101 
 	Parameter CONST_WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant__parameterized0' (28#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/xlconstant.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_pma_pmd_type_driver_0' (29#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_4/sim/bd_efdb_pma_pmd_type_driver_0.v:56]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_prtad_driver_0' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/sim/bd_efdb_prtad_driver_0.v:56]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant__parameterized1' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/xlconstant.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant__parameterized0' (28#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/xlconstant.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_pma_pmd_type_driver_0' (29#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_4/sim/bd_efdb_pma_pmd_type_driver_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_prtad_driver_0' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/sim/bd_efdb_prtad_driver_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant__parameterized1' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/xlconstant.v:23]
 	Parameter CONST_VAL bound to: 5'b00000 
 	Parameter CONST_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant__parameterized1' (29#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/xlconstant.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_prtad_driver_0' (30#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/sim/bd_efdb_prtad_driver_0.v:56]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xmac_0' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0.v:59]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xmac_0_block' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_block.v:64]
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xmac_0_block' (63#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_block.v:64]
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xmac_0' (64#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0.v:59]
-WARNING: [Synth 8-7071] port 'mdio_tri' of module 'bd_efdb_xmac_0' is unconnected for instance 'xmac' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/hdl/bd_efdb.v:299]
-WARNING: [Synth 8-7023] instance 'xmac' of module 'bd_efdb_xmac_0' has 52 connections declared, but only 51 given [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/hdl/bd_efdb.v:299]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.v:60]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_support' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_support.v:61]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_gt_common' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_gt_common.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant__parameterized1' (29#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/xlconstant.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_prtad_driver_0' (30#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_2/sim/bd_efdb_prtad_driver_0.v:56]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xmac_0' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xmac_0_block' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_block.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xmac_0_block' (63#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_block.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xmac_0' (64#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0.v:59]
+WARNING: [Synth 8-7071] port 'mdio_tri' of module 'bd_efdb_xmac_0' is unconnected for instance 'xmac' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/hdl/bd_efdb.v:299]
+WARNING: [Synth 8-7023] instance 'xmac' of module 'bd_efdb_xmac_0' has 52 connections declared, but only 51 given [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/hdl/bd_efdb.v:299]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_support' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_support.v:61]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_gt_common' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_gt_common.v:58]
 	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
 	Parameter QPLL_FBDIV_TOP bound to: 66 - type: integer 
 	Parameter QPLL_FBDIV_IN bound to: 10'b0101000000 
@@ -549,8 +549,8 @@ INFO: [Synth 8-6157] synthesizing module 'GTXE2_COMMON' [C:/Xilinx/Vivado/2020.2
 	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
 	Parameter SIM_VERSION bound to: 4.0 - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'GTXE2_COMMON' (65#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:22007]
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_gt_common' (66#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_gt_common.v:58]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_shared_clock_and_reset' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_shared_clock_and_reset.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_gt_common' (66#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_gt_common.v:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_shared_clock_and_reset' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_shared_clock_and_reset.v:59]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -563,21 +563,21 @@ INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE2' [C:/Xilinx/Vivado/2020.2/
 	Parameter CLKRCV_TRST bound to: TRUE - type: string 
 	Parameter CLKSWING_CFG bound to: 2'b11 
 INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE2' (68#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:33137]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer_rst' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer_rst.v:61]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer_rst' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer_rst.v:61]
 	Parameter C_NUM_SYNC_REGS bound to: 5 - type: integer 
 	Parameter C_RVAL bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer_rst' (69#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer_rst.v:61]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer_rst__parameterized0' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer_rst.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer_rst' (69#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer_rst.v:61]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer_rst__parameterized0' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer_rst.v:61]
 	Parameter C_NUM_SYNC_REGS bound to: 5 - type: integer 
 	Parameter C_RVAL bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer_rst__parameterized0' (69#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer_rst.v:61]
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_shared_clock_and_reset' (70#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_shared_clock_and_reset.v:59]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_block' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_block.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer_rst__parameterized0' (69#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer_rst.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_shared_clock_and_reset' (70#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_shared_clock_and_reset.v:59]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_block' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_block.v:59]
 	Parameter MASTER_WATCHDOG_TIMER_RESET bound to: 29'b00110111111000010010110100000 
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_local_clock_and_reset' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_local_clock_and_reset.v:58]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_local_clock_and_reset' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_local_clock_and_reset.v:58]
 	Parameter RXRESETTIME_NOM bound to: 24'b000000000000011000011011 
 	Parameter RXRESETTIME_MAX bound to: 24'b000100011010010010100110 
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_sim_speedup_controller' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_sim_speedup_controller.v:61]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_sim_speedup_controller' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_sim_speedup_controller.v:61]
 	Parameter SYNTH_VALUE bound to: 24'b000100011010010010100110 
 	Parameter SIM_VALUE bound to: 24'b000000000000011000011011 
 INFO: [Synth 8-6157] synthesizing module 'LUT1' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39137]
@@ -588,29 +588,29 @@ INFO: [Synth 8-6157] synthesizing module 'LDCE' [C:/Xilinx/Vivado/2020.2/scripts
 	Parameter IS_CLR_INVERTED bound to: 1'b0 
 	Parameter IS_G_INVERTED bound to: 1'b0 
 INFO: [Synth 8-6155] done synthesizing module 'LDCE' (72#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:38850]
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_sim_speedup_controller' (73#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_sim_speedup_controller.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_sim_speedup_controller' (73#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_sim_speedup_controller.v:61]
 INFO: [Synth 8-6157] synthesizing module 'BUFH' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1319]
 INFO: [Synth 8-6155] done synthesizing module 'BUFH' (74#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1319]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer_rst__parameterized1' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer_rst.v:61]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer_rst__parameterized1' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer_rst.v:61]
 	Parameter C_NUM_SYNC_REGS bound to: 7 - type: integer 
 	Parameter C_RVAL bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer_rst__parameterized1' (74#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer_rst.v:61]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer_rst__parameterized1' (74#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer_rst.v:61]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer.v:59]
 	Parameter C_NUM_SYNC_REGS bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer' (75#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer.v:59]
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_local_clock_and_reset' (76#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_local_clock_and_reset.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_ff_synchronizer' (75#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ff_synchronizer.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_local_clock_and_reset' (76#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_local_clock_and_reset.v:58]
 INFO: [Synth 8-6157] synthesizing module 'MUXCY_L' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:42961]
 INFO: [Synth 8-6155] done synthesizing module 'MUXCY_L' (79#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:42961]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_cable_pull_logic' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_cable_pull_logic.v:59]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_cable_pull_logic' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_cable_pull_logic.v:59]
 	Parameter CABLE_PULL_WATCHDOG_RESET bound to: 20'b00100000000000000000 
 	Parameter CABLE_UNPULL_WATCHDOG_RESET bound to: 20'b00100000000000000000 
 	Parameter GEARBOXSLIP_IGNORE_COUNT bound to: 4'b1111 
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_cable_pull_logic' (121#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_cable_pull_logic.v:59]
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_gtwizard_10gbaser_multi_GT' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_gtwizard_10gbaser_multi_gt.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_cable_pull_logic' (121#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_cable_pull_logic.v:59]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_gtwizard_10gbaser_multi_GT' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_gtwizard_10gbaser_multi_gt.v:52]
 	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
 	Parameter RX_DFE_KL_CFG2_IN bound to: 806439084 - type: integer 
 	Parameter PMA_RSV_IN bound to: 1994880 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_gtwizard_10gbaser_GT' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_gtwizard_10gbaser_gt.v:55]
+INFO: [Synth 8-6157] synthesizing module 'bd_efdb_xpcs_0_gtwizard_10gbaser_GT' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_gtwizard_10gbaser_gt.v:55]
 	Parameter GT_SIM_GTRESET_SPEEDUP bound to: TRUE - type: string 
 	Parameter RX_DFE_KL_CFG2_IN bound to: 806439084 - type: integer 
 	Parameter PMA_RSV_IN bound to: 1994880 - type: integer 
@@ -824,16 +824,16 @@ INFO: [Synth 8-6157] synthesizing module 'GTXE2_CHANNEL' [C:/Xilinx/Vivado/2020.
 	Parameter TX_XCLK_SEL bound to: TXOUT - type: string 
 	Parameter UCODEER_CLR bound to: 1'b0 
 INFO: [Synth 8-6155] done synthesizing module 'GTXE2_CHANNEL' (122#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:21334]
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_gtwizard_10gbaser_GT' (123#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_gtwizard_10gbaser_gt.v:55]
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_gtwizard_10gbaser_multi_GT' (124#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_gtwizard_10gbaser_multi_gt.v:52]
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_block' (125#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_block.v:59]
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_support' (126#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_support.v:61]
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0' (127#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.v:60]
-WARNING: [Synth 8-7071] port 'mdio_tri' of module 'bd_efdb_xpcs_0' is unconnected for instance 'xpcs' [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/hdl/bd_efdb.v:351]
-WARNING: [Synth 8-7023] instance 'xpcs' of module 'bd_efdb_xpcs_0' has 50 connections declared, but only 49 given [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/hdl/bd_efdb.v:351]
-INFO: [Synth 8-6155] done synthesizing module 'bd_efdb' (128#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/hdl/bd_efdb.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet_0' (129#1) [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/synth/axi_10g_ethernet_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0_axi_lite_sm' [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_gtwizard_10gbaser_GT' (123#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_gtwizard_10gbaser_gt.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_gtwizard_10gbaser_multi_GT' (124#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_gtwizard_10gbaser_multi_gt.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_block' (125#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_block.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0_support' (126#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_support.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb_xpcs_0' (127#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.v:60]
+WARNING: [Synth 8-7071] port 'mdio_tri' of module 'bd_efdb_xpcs_0' is unconnected for instance 'xpcs' [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/hdl/bd_efdb.v:351]
+WARNING: [Synth 8-7023] instance 'xpcs' of module 'bd_efdb_xpcs_0' has 50 connections declared, but only 49 given [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/hdl/bd_efdb.v:351]
+INFO: [Synth 8-6155] done synthesizing module 'bd_efdb' (128#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/hdl/bd_efdb.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet_0' (129#1) [d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/synth/axi_10g_ethernet_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0_axi_lite_sm' [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:67]
 	Parameter STARTUP bound to: 0 - type: integer 
 	Parameter RESET_MAC_TX bound to: 1 - type: integer 
 	Parameter RESET_MAC_RX bound to: 2 - type: integer 
@@ -873,539 +873,20 @@ INFO: [Synth 8-6157] synthesizing module 'axi_10g_ethernet_0_axi_lite_sm' [D:/Gi
 	Parameter PHY_STATUS_REG bound to: 8'b00000001 
 	Parameter PHY_ABILITY_REG bound to: 8'b00000100 
 	Parameter PHY_1000BASET_CONTROL_REG bound to: 8'b00001001 
-INFO: [Synth 8-251] ** Note: Setting MDC Frequency to 10.4MHZ.... [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:235]
-INFO: [Synth 8-251] ** Note: Reseting MAC RX [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:243]
-INFO: [Synth 8-251] ** Note: Reseting MAC TX [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:258]
-INFO: [Synth 8-251] ** Note: Specified PCS control register address for 10GBASE-R [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:280]
-INFO: [Synth 8-251] ** Note: Issuing PCS reset [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:283]
-INFO: [Synth 8-251] ** Note: Set BASE-R control into PCS default [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:288]
-INFO: [Synth 8-251] ** Note: PCS RESET POLL [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:336]
-INFO: [Synth 8-251] ** Note: PCS RESET is cleared [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:338]
-INFO: [Synth 8-251] ** Note: Specified PCS control register address for 10GBASE-R [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:352]
-INFO: [Synth 8-251] ** Note: Set BASE-R control into PCS loopback  [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:356]
-INFO: [Synth 8-251] ** Note: Read PCS control [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:396]
-INFO: [Synth 8-251] ** Note: Specified status register 1 address for 10GBASE-R [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:419]
-INFO: [Synth 8-251] ** Note: Reading status register  [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:432]
-INFO: [Synth 8-251] ** Note: MDIO_POLL_CHECK [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:443]
-INFO: [Synth 8-251] ** Note: CONFIG_DONE, BASE-R is in lock [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:462]
-INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet_0_axi_lite_sm' (130#1) [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:67]
-INFO: [Synth 8-6155] done synthesizing module 'sfp_10G' (131#1) [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/udp_ip_10g_sfp/udp_transmit_test.v:3]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1541.926 ; gain = 380.508
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1564.809 ; gain = 403.391
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1564.809 ; gain = 403.391
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1564.809 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0.xdc] for cell 'ethernet_core_0_A/inst/xmac/inst'
-Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0.xdc] for cell 'ethernet_core_0_A/inst/xmac/inst'
-Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0.xdc] for cell 'ethernet_core_0_B/inst/xmac/inst'
-Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0.xdc] for cell 'ethernet_core_0_B/inst/xmac/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sfp_10G_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/sfp_10G_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc] for cell 'ethernet_core_0_A/inst/xpcs/inst'
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:54]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:56]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:58]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:61]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:63]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:65]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:68]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -of [filter [all_fanout -flat -endpoints_only -from [get_pins -filter NAME=~*/Q -of_objects [get_cells -hierarchical -filter {NAME =~ *rxratecounter_i*rxusrclk2_en156*}]]] {NAME =~ *WE}]'. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:70]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:71]
-Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc] for cell 'ethernet_core_0_A/inst/xpcs/inst'
-Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc] for cell 'ethernet_core_0_B/inst/xpcs/inst'
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:54]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:56]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:58]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:61]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:63]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:65]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:68]
-WARNING: [Vivado 12-180] No cells matched 'get_cells -of [filter [all_fanout -flat -endpoints_only -from [get_pins -filter NAME=~*/Q -of_objects [get_cells -hierarchical -filter {NAME =~ *rxratecounter_i*rxusrclk2_en156*}]]] {NAME =~ *WE}]'. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:70]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:71]
-Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc] for cell 'ethernet_core_0_B/inst/xpcs/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sfp_10G_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/sfp_10G_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'clk_wiz_1/inst'
-Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc] for cell 'clk_wiz_1/inst'
-Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'clk_wiz_1/inst'
-Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc] for cell 'clk_wiz_1/inst'
-Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst'
-Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0/inst'
-Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst'
-Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0/inst'
-Parsing XDC File [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc]
-CRITICAL WARNING: [Constraints 18-851] Could not find an automatically derived clock matching the supplied criteria for renaming. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:70]
-Resolution: Review the create_generated_clock renaming specification. Use the report_clocks command to obtain the details of currently defined clocks and ensure that the create_generated_clock rename constraint specifies appropriate data to select one generated clock for renaming. Verify that you are attempting to rename a tool derived generated clock, and not a user defined generated clock.
-WARNING: [Vivado 12-627] No clocks matched 'ifcA'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:71]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:71]
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks ifcA]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:71]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:71]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-CRITICAL WARNING: [Constraints 18-851] Could not find an automatically derived clock matching the supplied criteria for renaming. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:101]
-Resolution: Review the create_generated_clock renaming specification. Use the report_clocks command to obtain the details of currently defined clocks and ensure that the create_generated_clock rename constraint specifies appropriate data to select one generated clock for renaming. Verify that you are attempting to rename a tool derived generated clock, and not a user defined generated clock.
-WARNING: [Vivado 12-627] No clocks matched 'ifcB'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:102]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:102]
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks ifcB]'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:102]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:102]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-WARNING: [Vivado 12-627] No clocks matched 'ifcA'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:119]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:119]
-WARNING: [Vivado 12-627] No clocks matched 'ifcB'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:119]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:119]
-WARNING: [Vivado 12-627] No clocks matched 'ifcB'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:120]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:120]
-WARNING: [Vivado 12-627] No clocks matched 'ifcA'. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:120]
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc:120]
-Finished Parsing XDC File [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/sfp_10G_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sfp_10G_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/sfp_10G_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/dont_touch.xdc]
-Finished Parsing XDC File [D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sfp_10G_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/sfp_10G_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc] for cell 'ethernet_core_0_A/inst/xmac/inst'
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance s_axi_aclk]'. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc:2]
-Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc:2]
-Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc] for cell 'ethernet_core_0_A/inst/xmac/inst'
-Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc] for cell 'ethernet_core_0_B/inst/xmac/inst'
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance s_axi_aclk]'. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc:2]
-Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc:2]
-Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc] for cell 'ethernet_core_0_B/inst/xmac/inst'
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/sfp_10G_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc] for cell 'ethernet_core_0_A/inst/xpcs/inst'
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance dclk]'. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc:48]
-Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc:48]
-Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc] for cell 'ethernet_core_0_A/inst/xpcs/inst'
-Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc] for cell 'ethernet_core_0_B/inst/xpcs/inst'
-WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of_objects [get_ports -scoped_to_current_instance dclk]'. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc:48]
-Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
-INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc:48]
-Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc] for cell 'ethernet_core_0_B/inst/xpcs/inst'
-Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_late.xdc] for cell 'clk_wiz_1/inst'
-Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_late.xdc] for cell 'clk_wiz_1/inst'
-Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'clk_wiz_0/inst'
-Finished Parsing XDC File [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc] for cell 'clk_wiz_0/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst_axis.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sfp_10G_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/sfp_10G_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Project 1-1715] 2 XPM XDC files have been applied to the design.
-Completed Processing XDC Constraints
-
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1721.855 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 88 instances were transformed.
-  MUXCY_L => MUXCY: 88 instances
-
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.335 . Memory (MB): peak = 1721.855 ; gain = 0.000
----------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:00:39 . Memory (MB): peak = 1721.855 ; gain = 560.438
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Loading Part and Timing Information
----------------------------------------------------------------------------------
-Loading part: xc7k420tiffg901-2L
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:00:39 . Memory (MB): peak = 1721.855 ; gain = 560.438
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying 'set_property' XDC Constraints
----------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_A/inst/xmac/inst. (constraint file  D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/dont_touch.xdc, line 37).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_B/inst/xmac/inst. (constraint file  D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/dont_touch.xdc, line 37).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_A/inst/xpcs/inst. (constraint file  D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/dont_touch.xdc, line 45).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_B/inst/xpcs/inst. (constraint file  D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/dont_touch.xdc, line 45).
-Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz_1/inst. (constraint file  D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/dont_touch.xdc, line 57).
-Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz_0/inst. (constraint file  D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/dont_touch.xdc, line 68).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_A. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_B. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_A/inst. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_B/inst. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_A/inst/xmac. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_B/inst/xmac. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_A/inst/xpcs. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_B/inst/xpcs. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_A/inst/prtad_driver. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_B/inst/prtad_driver. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_A/inst/dcm_locked_driver. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_B/inst/dcm_locked_driver. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_A/inst/pma_pmd_type_driver. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for ethernet_core_0_B/inst/pma_pmd_type_driver. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for rx_packet_fifo0_A. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for rx_packet_fifo0_B. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for tx_packet_fifo0_A. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for tx_packet_fifo0_B. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz_1. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for tx_packet_fifo0_A/inst/\gen_fifo.xpm_fifo_axis_inst /\gaxis_rst_sync.xpm_cdc_sync_rst_inst . (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for tx_packet_fifo0_B/inst/\gen_fifo.xpm_fifo_axis_inst /\gaxis_rst_sync.xpm_cdc_sync_rst_inst . (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for rx_packet_fifo0_A/inst/\gen_fifo.xpm_fifo_axis_inst /\gaxis_rst_sync.xpm_cdc_sync_rst_inst . (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for rx_packet_fifo0_B/inst/\gen_fifo.xpm_fifo_axis_inst /\gaxis_rst_sync.xpm_cdc_sync_rst_inst . (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for tx_packet_fifo0_A/inst/\gen_fifo.xpm_fifo_axis_inst . (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for rx_packet_fifo0_A/inst/\gen_fifo.xpm_fifo_axis_inst . (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for rx_packet_fifo0_B/inst/\gen_fifo.xpm_fifo_axis_inst . (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for tx_packet_fifo0_B/inst/\gen_fifo.xpm_fifo_axis_inst . (constraint file  auto generated constraint).
----------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:40 . Memory (MB): peak = 1721.855 ; gain = 560.438
----------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'gen_fwft.curr_fwft_state_reg' in module 'xpm_fifo_base'
-INFO: [Synth 8-802] inferred FSM for state register 'rs_state_reg' in module 'ten_gig_eth_mac_v15_1_2_rs_64bit'
-INFO: [Synth 8-802] inferred FSM for state register 'pause_state_reg' in module 'ten_gig_eth_mac_v15_1_2_pfc_tx_cntl'
-INFO: [Synth 8-802] inferred FSM for state register 'legacy_state_reg' in module 'ten_gig_eth_mac_v15_1_2_pfc_tx_cntl'
-INFO: [Synth 8-802] inferred FSM for state register 'pause_state_reg' in module 'ten_gig_eth_mac_v15_1_2_tx_pause_cntl'
-INFO: [Synth 8-802] inferred FSM for state register 'pause_state_reg' in module 'ten_gig_eth_mac_v15_1_2_rx_control'
-INFO: [Synth 8-802] inferred FSM for state register 'mcp1_state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_7_idle_delete'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_7_tx_pcs_fsm'
-INFO: [Synth 8-802] inferred FSM for state register 'mcp1_state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_7_rx_block_lock_fsm'
-INFO: [Synth 8-802] inferred FSM for state register 'mcp1_state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_7_rx_ber_mon_fsm'
-INFO: [Synth 8-802] inferred FSM for state register 'mcp1_state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_7_rx_pcs_fsm'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_7_mdio_interface'
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ten_gig_eth_pcs_pma_v6_0_7_drp_ipif'
-INFO: [Synth 8-802] inferred FSM for state register 'axi_state_reg' in module 'axi_10g_ethernet_0_axi_lite_sm'
-INFO: [Synth 8-802] inferred FSM for state register 'mdio_access_sm_reg' in module 'axi_10g_ethernet_0_axi_lite_sm'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 invalid |                               00 |                               00
-            stage1_valid |                               01 |                               10
-       both_stages_valid |                               10 |                               11
-            stage2_valid |                               11 |                               01
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    INIT |                               00 |                               00
-                   COUNT |                               01 |                               01
-                   FAULT |                               10 |                               11
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'rs_state_reg' using encoding 'sequential' in module 'ten_gig_eth_mac_v15_1_2_rs_64bit'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0001 |                              000
-                     REQ |                             0010 |                              001
-                    WAIT |                             0100 |                              010
-                   COUNT |                             1000 |                              011
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'legacy_state_reg' using encoding 'one-hot' in module 'ten_gig_eth_mac_v15_1_2_pfc_tx_cntl'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  P_IDLE |                               00 |                               00
-                   P_REQ |                               01 |                               01
-                  P_WAIT |                               10 |                               10
-                  P_HOLD |                               11 |                               11
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'pause_state_reg' using encoding 'sequential' in module 'ten_gig_eth_mac_v15_1_2_pfc_tx_cntl'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                              001 |                               00
-                 REQUEST |                              010 |                               01
-                    SEND |                              100 |                               10
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'pause_state_reg' using encoding 'one-hot' in module 'ten_gig_eth_mac_v15_1_2_tx_pause_cntl'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                            00001 |                              000
-                  LEGACY |                            00010 |                              001
-                     PFC |                            00100 |                              100
-                PFCQ3_Q6 |                            01000 |                              101
-                   PFCQ7 |                            10000 |                              110
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'pause_state_reg' using encoding 'one-hot' in module 'ten_gig_eth_mac_v15_1_2_rx_control'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                STRAIGHT |                              000 |                              000
-                 DELETE3 |                              001 |                              010
-                 DELETE1 |                              010 |                              001
-                 TWISTED |                              011 |                              100
-        POSSIBLE_DELETE4 |                              100 |                              011
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'mcp1_state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_7_idle_delete'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 TX_INIT |                              000 |                              000
-                    TX_E |                              001 |                              100
-                    TX_C |                              010 |                              001
-                    TX_D |                              011 |                              010
-                    TX_T |                              100 |                              011
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_7_tx_pcs_fsm'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-               LOCK_INIT |                               00 |                               00
-               RESET_CNT |                               01 |                               01
-   TEST_VALID_INVALID_SH |                               10 |                               10
-                    SLIP |                               11 |                               11
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'mcp1_state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_7_rx_block_lock_fsm'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-             BER_MT_INIT |                              000 |                              000
-             START_TIMER |                              001 |                              001
-             BER_TEST_SH |                              010 |                              010
-              BER_BAD_SH |                              011 |                              011
-                  HI_BER |                              100 |                              100
-                GOOD_BER |                              101 |                              101
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'mcp1_state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_7_rx_ber_mon_fsm'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 RX_INIT |                              000 |                              000
-                    RX_E |                              001 |                              100
-                    RX_T |                              010 |                              011
-                    RX_C |                              011 |                              001
-                    RX_D |                              100 |                              010
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'mcp1_state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_7_rx_pcs_fsm'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                       0000010000 |                             0000
-                PREAMBLE |                       0000100000 |                             0001
-                   START |                       0000001000 |                             0010
-                OPCODE_1 |                       0000000001 |                             0011
-                OPCODE_2 |                       0000000010 |                             0100
-                LD_PRTAD |                       0000000100 |                             0101
-                LD_DEVAD |                       1000000000 |                             0110
-                    TA_1 |                       0001000000 |                             0111
-                    TA_2 |                       0010000000 |                             1000
-               ADDR_DATA |                       0100000000 |                             1001
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'ten_gig_eth_pcs_pma_v6_0_7_mdio_interface'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                               00 |                               00
-                     REQ |                               01 |                               01
-                     GNT |                               10 |                               10
-                    GNT1 |                               11 |                               11
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ten_gig_eth_pcs_pma_v6_0_7_drp_ipif'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                    IDLE |                             0010 |                               00
-                SET_DATA |                             1000 |                               01
-                    INIT |                             0100 |                               10
-                    POLL |                             0001 |                               11
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'mdio_access_sm_reg' using encoding 'one-hot' in module 'axi_10g_ethernet_0_axi_lite_sm'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                 STARTUP |                             0000 |                            00000
-            RESET_MAC_RX |                             0001 |                            00010
-            RESET_MAC_TX |                             0010 |                            00001
-             MDIO_ADDR_1 |                             0011 |                            00111
-     MDIO_READ_PCS_RESET |                             0100 |                            01100
-MDIO_READ_PCS_RESET_POLL |                             0101 |                            01101
-MDIO_READ_PCS_RESET_READ |                             0110 |                            01110
-        MDIO_RESET_CHECK |                             0111 |                            01111
-             MDIO_ADDR_2 |                             1000 |                            01000
-                 MDIO_WR |                             1001 |                            00110
-               MDIO_RD_1 |                             1010 |                            00101
-               MDIO_ADDR |                             1011 |                            00011
-                 MDIO_RD |                             1100 |                            00100
-         MDIO_POLL_CHECK |                             1101 |                            01001
-         MDIO_CHECK_DATA |                             1110 |                            01010
-             CONFIG_DONE |                             1111 |                            01011
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'axi_state_reg' using encoding 'sequential' in module 'axi_10g_ethernet_0_axi_lite_sm'
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 1721.855 ; gain = 560.438
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Part Resource Summary
----------------------------------------------------------------------------------
-Part Resources:
-DSPs: 1680 (col length:160)
-BRAMs: 1670 (col length: RAMB18 160 RAMB36 80)
----------------------------------------------------------------------------------
-Finished Part Resource Summary
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Cross Boundary and Area Optimization
----------------------------------------------------------------------------------
-INFO: [Synth 8-5784] Optimized 10 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 84 bits, new ram width 74 bits.
-INFO: [Synth 8-5784] Optimized 10 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 84 bits, new ram width 74 bits.
-INFO: [Synth 8-5784] Optimized 11 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 84 bits, new ram width 73 bits.
-INFO: [Synth 8-5784] Optimized 11 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 84 bits, new ram width 73 bits.
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:00 ; elapsed = 00:02:03 . Memory (MB): peak = 1721.855 ; gain = 560.438
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
-WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 76 of d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:76]
-WARNING: [Synth 8-3321] set_false_path : Empty from list for constraint at line 76 of d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc. [d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc:76]
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:15 ; elapsed = 00:02:18 . Memory (MB): peak = 1721.855 ; gain = 560.438
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:22 ; elapsed = 00:02:25 . Memory (MB): peak = 1721.855 ; gain = 560.438
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:36 ; elapsed = 00:02:39 . Memory (MB): peak = 1730.344 ; gain = 568.926
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:42 ; elapsed = 00:02:45 . Memory (MB): peak = 1744.836 ; gain = 583.418
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:42 ; elapsed = 00:02:46 . Memory (MB): peak = 1744.836 ; gain = 583.418
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:46 ; elapsed = 00:02:50 . Memory (MB): peak = 1744.836 ; gain = 583.418
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:46 ; elapsed = 00:02:50 . Memory (MB): peak = 1744.836 ; gain = 583.418
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:48 ; elapsed = 00:02:52 . Memory (MB): peak = 1746.516 ; gain = 585.098
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:48 ; elapsed = 00:02:52 . Memory (MB): peak = 1746.516 ; gain = 585.098
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Writing Synthesis Report
----------------------------------------------------------------------------------
-
-Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
-
-Report Cell Usage: 
-+------+--------------+------+
-|      |Cell          |Count |
-+------+--------------+------+
-|1     |BUFG          |     8|
-|2     |BUFH          |     2|
-|3     |CARRY4        |   588|
-|4     |GTXE2_CHANNEL |     2|
-|5     |GTXE2_COMMON  |     2|
-|6     |IBUFDS_GTE2   |     2|
-|7     |LUT1          |   432|
-|8     |LUT2          |  2055|
-|9     |LUT3          |  2645|
-|10    |LUT4          |  2216|
-|11    |LUT5          |  2450|
-|12    |LUT6          |  5260|
-|13    |MMCME2_ADV    |     2|
-|14    |MUXCY_L       |    88|
-|15    |MUXF7         |    56|
-|16    |RAM32M        |   198|
-|17    |RAM64M        |    96|
-|18    |RAM64X1D      |     4|
-|19    |RAM64X1S      |     4|
-|20    |RAMB18E1      |     4|
-|21    |RAMB36E1      |     8|
-|22    |SRL16E        |    32|
-|23    |FDCE          |    42|
-|24    |FDPE          |   204|
-|25    |FDRE          | 13140|
-|26    |FDSE          |  1382|
-|27    |IBUF          |     6|
-|28    |OBUF          |    10|
-+------+--------------+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:48 ; elapsed = 00:02:52 . Memory (MB): peak = 1746.516 ; gain = 585.098
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:14 ; elapsed = 00:02:37 . Memory (MB): peak = 1746.516 ; gain = 428.051
-Synthesis Optimization Complete : Time (s): cpu = 00:02:48 ; elapsed = 00:02:52 . Memory (MB): peak = 1746.516 ; gain = 585.098
-INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.904 . Memory (MB): peak = 1755.594 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1048 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
-INFO: [Opt 31-141] Inserted 4 OBUFs to IO ports without IO buffers.
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1776.512 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 334 instances were transformed.
-  (MUXCY,XORCY) => CARRY4: 32 instances
-  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 198 instances
-  RAM64M => RAM64M (RAMD64E(x4)): 96 instances
-  RAM64X1D => RAM64X1D (RAMD64E(x2)): 4 instances
-  RAM64X1S => RAM64X1S (RAMS64E): 4 instances
-
-INFO: [Common 17-83] Releasing license: Synthesis
-226 Infos, 36 Warnings, 6 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:06 ; elapsed = 00:03:11 . Memory (MB): peak = 1776.512 ; gain = 615.094
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Common 17-1381] The checkpoint 'D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/sfp_10G.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1776.512 ; gain = 0.000
-INFO: [runtcl-4] Executing : report_utilization -file sfp_10G_utilization_synth.rpt -pb sfp_10G_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jul 19 12:33:37 2021...
+INFO: [Synth 8-251] ** Note: Setting MDC Frequency to 10.4MHZ.... [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:235]
+INFO: [Synth 8-251] ** Note: Reseting MAC RX [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:243]
+INFO: [Synth 8-251] ** Note: Reseting MAC TX [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:258]
+INFO: [Synth 8-251] ** Note: Specified PCS control register address for 10GBASE-R [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:280]
+INFO: [Synth 8-251] ** Note: Issuing PCS reset [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:283]
+INFO: [Synth 8-251] ** Note: Set BASE-R control into PCS default [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:288]
+INFO: [Synth 8-251] ** Note: PCS RESET POLL [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:336]
+INFO: [Synth 8-251] ** Note: PCS RESET is cleared [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:338]
+INFO: [Synth 8-251] ** Note: Specified PCS control register address for 10GBASE-R [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:352]
+INFO: [Synth 8-251] ** Note: Set BASE-R control into PCS loopback  [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:356]
+INFO: [Synth 8-251] ** Note: Read PCS control [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:396]
+INFO: [Synth 8-251] ** Note: Specified status register 1 address for 10GBASE-R [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:419]
+INFO: [Synth 8-251] ** Note: Reading status register  [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:432]
+INFO: [Synth 8-251] ** Note: MDIO_POLL_CHECK [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:443]
+INFO: [Synth 8-251] ** Note: CONFIG_DONE, BASE-R is in lock [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:462]
+INFO: [Synth 8-6155] done synthesizing module 'axi_10g_ethernet_0_axi_lite_sm' (130#1) [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'sfp_10G' (131#1) [D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/udp_ip_10g_sfp/udp_transmit_test.v:3]

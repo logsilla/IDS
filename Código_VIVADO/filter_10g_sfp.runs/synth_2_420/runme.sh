@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420'
+HD_PWD='D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.runs/synth_2_420'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -59,10 +59,10 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 # XDC: ip/clk_wiz_1/clk_wiz_1.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_wiz_1 || ORIG_REF_NAME==clk_wiz_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: ip/clk_wiz_1/clk_wiz_1_ooc.xdc
-
 # XDC: ip/clk_wiz_1/clk_wiz_1_late.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_wiz_1 || ORIG_REF_NAME==clk_wiz_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: ip/clk_wiz_1/clk_wiz_1_ooc.xdc
 
 # XDC: ip/clk_wiz_0/clk_wiz_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
@@ -70,7 +70,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 # XDC: ip/clk_wiz_0/clk_wiz_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
-# XDC: ip/clk_wiz_0/clk_wiz_0_ooc.xdc
-
 # XDC: ip/clk_wiz_0/clk_wiz_0_late.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: ip/clk_wiz_0/clk_wiz_0_ooc.xdc

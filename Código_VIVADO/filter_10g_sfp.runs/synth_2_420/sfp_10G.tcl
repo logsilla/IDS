@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/sfp_10G.tcl"
+  variable script "D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.runs/synth_2_420/sfp_10G.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_2_420" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k420tiffg901-2L
 
@@ -78,50 +77,50 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/wt [current_project]
-set_property parent.project_path D:/GitHub/Filtro-FPGA/filter_10g_sfp.xpr [current_project]
+set_property webtalk.parent_dir D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.cache/wt [current_project]
+set_property parent.project_path D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo d:/GitHub/Filtro-FPGA/filter_10g_sfp.cache/ip [current_project]
+set_property ip_output_repo d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v
-  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v
-  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_sync_block.v
-  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_sync_reset.v
-  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkEthernet.v
-  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkFilter.v
-  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkIP.v
-  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkNetwork.v
-  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkTCP.v
-  D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/imports/udp_ip_10g_sfp/udp_transmit_test.v
+  D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/SizedFIFO.v
+  D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_axi_lite_sm.v
+  D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_sync_block.v
+  D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/example/axi_10g_ethernet_0_sync_reset.v
+  D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkEthernet.v
+  D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkFilter.v
+  D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkIP.v
+  D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkNetwork.v
+  D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/firewall-filter/mkTCP.v
+  D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/imports/udp_ip_10g_sfp/udp_transmit_test.v
 }
-read_ip -quiet D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/axi_10g_ethernet_0.xci
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0.xdc]
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc]
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/bd_efdb_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/synth/axi_10g_ethernet_0_ooc.xdc]
+read_ip -quiet D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/axi_10g_ethernet_0.xci
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_0/synth/bd_efdb_xmac_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/ip/ip_1/synth/bd_efdb_xpcs_0.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/bd_0/bd_efdb_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axi_10g_ethernet_0/synth/axi_10g_ethernet_0_ooc.xdc]
 
-read_ip -quiet D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0.xci
+read_ip -quiet D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/axis_data_fifo_0/axis_data_fifo_0.xci
 
-read_ip -quiet D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc]
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_late.xdc]
+read_ip -quiet D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xci
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_board.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_late.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_ooc.xdc]
 
-read_ip -quiet D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc]
+read_ip -quiet D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc]
+set_property used_in_implementation false [get_files -all d:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -132,8 +131,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc
-set_property used_in_implementation false [get_files D:/GitHub/Filtro-FPGA/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc]
+read_xdc D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc
+set_property used_in_implementation false [get_files D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.srcs/constrs_1/new/udp_ip_10g.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Jul 19 12:30:04 2021
-# Process ID: 22368
-# Current directory: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420
+# Start of session at: Wed Mar 16 10:15:08 2022
+# Process ID: 10056
+# Current directory: D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.runs/synth_2_420
 # Command line: vivado.exe -log sfp_10G.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sfp_10G.tcl
-# Log file: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420/sfp_10G.vds
-# Journal file: D:/GitHub/Filtro-FPGA/filter_10g_sfp.runs/synth_2_420\vivado.jou
+# Log file: D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.runs/synth_2_420/sfp_10G.vds
+# Journal file: D:/GitHub/IDS/Código_VIVADO/filter_10g_sfp.runs/synth_2_420\vivado.jou
 #-----------------------------------------------------------
 source sfp_10G.tcl -notrace
